@@ -1,0 +1,25 @@
+h1{
+    color:#f07167;
+    /*Ahora vamos a darle estilso y colores a los links*/
+
+}
+
+a:link{
+    color:#fb8500;
+}
+
+/*eventos de los links, con text-decoration se le puede quitar el subrayado al texto*/
+
+a:visited{
+    color:aqua;
+}
+
+/*CUando se pone el cursor encima*/
+a:hover{
+    color:crimson;
+}
+
+/*Otro evento*/
+a:active{
+    color:chocolate;
+}

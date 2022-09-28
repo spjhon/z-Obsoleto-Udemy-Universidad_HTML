@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <!--Con fieldset se puede agregar un marco al formulario-->
+    <!--Con ACTION se va a decir a donde se va a enviar la info-->
+    <!--Se puede eliminar la opcion de autocomletado con autocomplete -->
+    <form method="POST" action="mi_servidor" autocomplete="off">
+        <fieldset>
+            <legend>DATOS DE LA PERSONA:</legend>
+
+            <!--Tambien se puede agregar un consecutivo para el formulario-->
+            <label for="nombre">consecutivo:</label> <br>
+            <input type="text" id="consecutivo" name="consecutivo"
+            readonly="true" disabled="true" value="100"/> <br> 
+
+            <!--Se pueden enviar parametros ocultos-->
+            <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+
+            <label for="nombre">Nombre:</label> <br>
+            <!--Con esta etiqueta de form pocedemos a colocar un INPUT-->
+            <input type="text" id="nombre" name="nombre"
+            placeholder="Escribe tu nombre" required="true"/> <br> 
+            <!--Con el value se puede meter texto de otro lado a la caja de texto-->
+            <!--Ahora vamos a agregar un boton para poder procesar la informacion-->
+            <!--Con el atributo require de valida que haya algo en los campos y no envie informacion vacia-->
+
+            <label for="apellidos">Apellidos:</label> <br>
+            <!--Con esta etiqueta de form pocedemos a colocar un INPUT-->
+            <!--Con esta palceholder se deja un texto en la caja para que el usuario reemplace-->
+            <input type="text" id="apellidos" name="apellidos"
+            placeholder="Escribe tu apellido" required="true"/> <br>
+
+            <label for="id">ID:</label> <br>
+            <!--Con esta etiqueta de form pocedemos a colocar un INPUT-->
+            <input type="text" id="id" name="id"
+            placeholder="Introduce tu ID" required="true"/> <br>
+
+            <label for="pass">PASSWORD:</label> <br>
+            <!--Con esta etiqueta de form pocedemos a colocar un INPUT-->
+            <input type="password" id="pass" name="pass"
+            placeholder="Introduce tu password" required="true"/> <br>
+
+            <label for="email">EMAIL:</label> <br>
+            <!--Con esta etiqueta de form pocedemos a colocar un INPUT-->
+            <input type="password" id="email" name="email"
+            placeholder="Introduce tu EMAIL" required="true"/> <br>
+
+            <label for="edad">EDAD:</label> <br>
+            <!--Con esta etiqueta de form pocedemos a colocar un INPUT-->
+            <!--El step es para decir que tipo de numeros acepta-->
+            <input type="number" id="edad" name="edad" step="any" 
+            placeholder="Introduce tu EDAD" required="true"/> <br>
+
+            <!--Ahora con el radiobutton y checkboxes-->
+            <label>GENERO:</label> <br>
+            <!--Al ser un radio button se envia el valor de femenino-->
+            <input type="radio" id="femenino" name="genero" value="femenino"
+            placeholder="Introduce tu EDAD" required="true"/>
+            <label for="femenino">Femenino</label> <br>
+
+            <input type="radio" id="masculino" name="genero" value="masculino"
+            placeholder="Introduce tu EDAD" required="true"/>
+            <label for="masculino">Masculino</label> <br>
+            <!--Para que se seleccione solo uno de los dos el nombre debe de ser el mismo para todos-->
+
+            <!--Ahora vamos a agregar los checkboxes, todos los checkboxes llevan el mismo nombre-->
+            <label>MUSICA PREFERIDA:</label> <br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+            <label for="clasica">Clasica</label> <br>
+
+            <input type="checkbox" id="jazz" name="musica" value="jazz"/>
+            <label for="Jazz">Jazz</label> <br>
+
+            <!--Ahora vamos a agregar los select y textarea-->
+            <label for="autos">Autos Favoritos</label> <br>
+            <select id="autos" name="autos"> 
+                <option value="0">Volvo</option>
+                <option value="1">Porche</option> 
+                <option value="2">Mercedez</option> 
+                <option value="3" selected="ture">Toyota</option>  
+            </select> <br>
+            <br>
+
+            <label for="autos">Autos Favoritos</label> <br>
+            <select id="autos" name="autos" multiple="true"> 
+                <option value="0">Volvo</option>
+                <option value="1">Porche</option> 
+                <option value="2">Mercedez</option> 
+                <option value="3" selected="ture">Toyota</option>  
+            </select> <br>
+            <br>
+
+            <label for="comentario">COMENTARIOS</label> <br>
+            <textarea id="comentario" name="comentario" rows="2" cols="30">
+
+
+            </textarea> <br>
+
+
+
+            <input type="submit" value="ENVIAR"/> <br>
+            <input type="submit" formnovalidate="formnovalidate"
+                value="ENVIAR sin validar"/>
+
+            <input type="reset" value="Reestablecer"/>
+
+            <!--Si se desa enviar informacion sensible como contrasenas se utiliza el GET o el POST HTTP-->
+    </fieldset>
+    <!--Tambien se puede agregar la opcion de resetar los campos de los formularios-->
+
+    </form>
+</body>
+</html>

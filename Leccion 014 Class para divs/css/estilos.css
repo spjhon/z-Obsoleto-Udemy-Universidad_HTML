@@ -1,0 +1,36 @@
+/* Con esto decimos que los cambios aqui expresados se van a integrar a toda la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Vamos a agregar un identificador*/
+#titulo-principal{
+    color:#f72585;
+    text-align: center;
+    margin: 15px;
+}
+
+h2{
+    color:#3f37c9;
+}
+
+p{
+    color:#457b9d;
+}
+
+
+/* Para definir una clase y asi estas modificaiones no se apliquen solo a
+todos los div sino a los que se necesite entonces se crea una clase*/
+
+.tarjeta{
+    background-color: #f1faee;
+    text-align: center;
+    border: 6px solid #457b9d;
+    margin: 15px 100px;
+    padding: 15px;
+}
+
+.titulo-uno{
+    color: #f72585;
+}

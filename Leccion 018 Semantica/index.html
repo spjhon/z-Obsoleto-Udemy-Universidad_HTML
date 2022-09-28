@@ -1,0 +1,60 @@
+<!--ETIQUETAS ESTRUCTURALES o semanticas EN HTML5-->
+<!--<section> para indicar una nueva seccion para dividir la pagina HTML-->
+<!--<article> para crear articulos dentro de la pagina y evitar tantos div, son elementos independientes que tienen sus propios cosos para enviar a otra pagia web por ejemplo-->
+<!--<aside> barras laterales para una pagina web, notas o informacion adicional que no tiene nada que ver con el articulo por ejemplo el autor o la fecha-->
+<!--<header> parte superior-->
+<!--<footer> pie de pagina-->
+<!--<hgroup> agrupar desde h1 hasta h6-->
+<!--<nav> crear barras de navegacion-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica y Estructura en HTML5</title>
+    <link href="/css/estilos.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <!--<para agregar el cabecero de nuestra pagina-->
+        <h1>Etiquetas semanticas en HTML5</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+        <a href="#">Acerca de</a>
+    </nav>
+
+    <section>
+        <h2>Seccion 1</h2>
+        <p>Informacion de la seccion, esto es un parrafo</p>
+        <aside>
+            <p>Nombre del autor, esto es un aside</p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Seccion 2</h2>
+        <article>
+            <h3>Articulo 1</h3>
+        </article>
+        <article>
+            <h3>Articulo 2</h3>
+        </article>
+    </section>
+    
+    <footer>
+        <h2> Esto es un pie de pagina
+            <a href="https://www.google.com.co/" target="_blank">
+            a google.com
+            </a> 
+        </h2>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+h1{
+    color:#560dad;
+}
+
+/*Para darle la apaciencia de boton a un link hay que utilizar el padding y el border para darle
+la apariencia y dar apariencia y sensacion al boton, entonces hay que configurar todos los elementos*/
+
+a:link, a:visited{
+    background-color: #b5179e;
+    color:white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+a:hover, a:active{
+    background-color: aqua;
+}

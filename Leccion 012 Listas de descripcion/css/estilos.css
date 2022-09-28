@@ -1,0 +1,25 @@
+/*Con esto vamos a darle adornos a los simbolos de la lista ordenada desde CSS*/
+
+ol{
+    /*Esto es para quitar los estilos ya que nosotros mismos lo vamos a agregar*/
+    list-style: none;
+    counter-reset: contador; /*con esto reseteamos el contador con cada lista*/
+}
+
+ol li{
+    counter-increment: contador; /*con esto decimos que por cada vez que aparezca curso, se va a agregar un contador*/
+}
+
+/*Con esto seleccionamos los elementos de la lista*/
+/*Y agregamos lo que se conoce como un selector, con eso podemos agregar un texto antes del list item*/
+ol li::before{
+    content: "curso " counter(contador) ") "; /*esto es una funcion a la cual le vamaos a dar nombre*/
+    color: #006f00;
+}
+
+ol li::after{
+    content: ".";
+}
+
+/*vamos a agregarle un contador*/
+

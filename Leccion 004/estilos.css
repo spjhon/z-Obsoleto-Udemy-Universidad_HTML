@@ -1,0 +1,25 @@
+/*Esto es un comentario en una hoja de estilos*/
+/*hay que entender la jerarquia de donde se definen las caracteristicas*/
+
+
+
+h1{
+    color:#003049;
+    text-align: center;
+    
+}
+p{
+    /*Aca vemos el concepto de padding,border y margin*/
+    color:#003049;
+    background-color:#fcbf49;
+    padding: 15px solid #fcbf49;
+    border: 10px solid #f77f00;
+    /*Vamos a utilizar un margin top para darle pixeles a cada borde por separado*/
+    /*margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;*/
+    /*otra forma de hacerlo*/
+    margin:40px 10px 20px 10px;
+    /*tambien esta la opcion de auto que parece funcionar bien*/
+}

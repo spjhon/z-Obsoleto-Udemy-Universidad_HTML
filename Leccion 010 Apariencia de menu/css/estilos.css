@@ -1,0 +1,39 @@
+h1{
+    color: #1d3557;
+}
+
+/*Hay que darle varios cambios a la lista no ordenada que tenemos en index*/
+
+ul{
+    /*Con esto se quitan los puntos de cada elemento de la lista*/
+    list-style-type: none;
+    /*Con esto se le agregan colores de fondo solo a la parte de contendio del padding*/
+    background-color: #457b9d;
+    /*Con esto separamos los links para que no queden pegados*/
+    overflow: hidden;
+    /*Con esto le quitamos el border y el padding para que no se generen automaticamente*/
+    margin:0;
+    padding:0;
+}
+
+li{
+    /*Ahora vamos a cambiar que los elementos no esten vertical sino horizontal*/
+    float:left;
+}
+
+/*De esta forma se seleccionan los links dentro de la lista de items por lo que estos estilos
+solo se van a aplicar en esos elementos*/
+li a{
+    display: block;
+    color: white;
+    /*Alineamos el centro y le damos padding para que se vea como un bloque*/
+    text-align: center;
+    padding: 15px;
+    /*Le quitamos el subrayado*/
+    text-decoration: none;
+}
+
+/*Con esto le damos un cambio de color cuando se pase el cursor*/
+li a:hover{
+    background-color: #1d3557;
+}
