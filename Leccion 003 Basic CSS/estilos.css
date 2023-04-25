@@ -67,7 +67,6 @@ En este ejemplo gana el color beige en el p ya que es por especifidad (ir a CSS 
 
 h1{
     color:rgb(7, 139, 9);
-    
 }
 
 p{
@@ -76,5 +75,5 @@ p{
 }
 
 .subsection {
-  color: red;
+  color: purple;
 }
