@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores y Especividad</title>
+    
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body style="background-color:gray">
+    <a href="introaCSS.html" 
+    >ir a Intro CSS</a>
+
+    <hr/>
+
+    <h1>Tipos de Selectores con Ejemplos</h1>
+    <h2>Selectores Basicos</h2>
+
+    <hr/>
+
+    <div>
+        <h4>Type Selector, tambien llamado Tag Selector</h4>
+        <h4>Selecciona todos los elementos DE LA PAGINA que sean de tipo span</h4>
+        <span>Aquí hay un elemento 'span' con algo de texto.</span>
+        <p>Aquí hay un elemento 'p' con algo de texto.</p>
+        <span>Aquí hay un elemento 'span' con más texto.</span>
+    </div>
+
+    <hr/>
+
+    <div>
+        <h4>Class Selector</h4>
+        <h4>Selecciona todos los elementos DE LA PAGINA que tengan como clase "classy"</h4>
+        <span class="classy">Aquí hay un span con algo de texto. que tiene como clase "classy"</span>
+        <span>Aquí hay otro. el cual es afectado por el type selector</span>
+    </div>
+
+    <hr/>
+
+    <div>
+        <h4>ID Selector</h4>
+        <h4>No utilizarlos tan seguido, solo cuando sea impresindible, ojo los ids no se pueden repetir en una pagina</h4>
+        <div id="identified">¡Este div tiene un ID especial!</div>
+        <div>Este solo es un div regular.</div>
+    </div>
+
+    <hr/>
+    <hr/>
+    <h2>Selectores Por Atributos</h2>
+    <hr/>
+
+    <div>
+        <h4>ATRIBUTE SELECTORS</h4>
+        <h4>El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un atributo determinado.</h4>
+        <h4>por ejemplo, a[tittle] selecciona elementos <a> con un atributo title.</h4>
+        <ul>
+            <li><a href="#internal" title="Ninguno">Enlace interno</a></li>
+            <li><a href="http://example.com">Enlace de ejemplo para seleccionar por atributo href</a></li>
+            <li><a class="mi-style" href="#InSensitive">Ejemplo de enlace con selector por atributo que empieza por mi</a></li>
+            <li><a class="laclase" href="#InSensitive">Ejemplo de enlace con selector por atributo *</a></li>
+            <li><a class="in-clase" href="http://example.org">Ejemplo de enlace.org</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
