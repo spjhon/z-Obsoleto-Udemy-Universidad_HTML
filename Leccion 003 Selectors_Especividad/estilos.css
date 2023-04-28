@@ -18,7 +18,7 @@ Example:
 ---------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------
 
-- TYPE SELECTOR or ELEMENT SELECTOR: cuando se busca por tipo (ojo afecta a todos los que sean de este tipo)
+- TYPE SELECTOR or ELEMENT SELECTOR or TAG SELECTOR: cuando se busca por tipo (ojo afecta a todos los que sean de este tipo)
 
 Example:
 
@@ -42,7 +42,7 @@ span.classy {
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------
 
-ID SELECTORS: NO UTILIZARLOS TAN SEGUIDOS, SOLO CUANDO SEA IMPRESINDIBLE, OJO LOS IDS NO SE PUEDEN REPETIR EN UNA PAGINA
+- ID SELECTORS: NO UTILIZARLOS TAN SEGUIDOS, SOLO CUANDO SEA IMPRESINDIBLE, OJO LOS IDS NO SE PUEDEN REPETIR EN UNA PAGINA
 
 El elemento con id="demo" */
 
@@ -50,6 +50,7 @@ El elemento con id="demo" */
   background-color: skyblue;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*ATRIBUTE SELECTORS ALONE: por ejemplo, a[tittle] selecciona elementos <a> con un atributo title.*/
@@ -83,26 +84,140 @@ a[class$="in-clase"] {
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 
-/*SELECTOR DESCENDENTE (COMBINADOR): por ejemplo, div p seleccionará todos los elementos p que son descendientes de un elemento div*/
+/*Herencia: Algunas propiedades de CSS se heredan de los elementos padres a los elementos hijos. Esto significa que si se aplica una 
+propiedad determinada a un elemento, los elementos hijos también la tendrán a menos que se especifique lo contrario.*/
+
+/*COMBINADORES O COMBINATORS: Los combinadores son elementos que se utilizan para combinar diferentes tipos de selectores y crear selectores más específicos. 
+Algunos de los combinadores que se pueden utilizar son el espacio en blanco (para seleccionar elementos descendientes), el signo mayor que (>) 
+(para seleccionar elementos hijos directos) y el signo más (+) y la tilde (~) (para seleccionar hermanos adyacentes y generales, respectivamente).*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
-/*SELECTOR DE HILO DIRECTO (COMBINADOR): selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).
+/*GROOPING SELECTORS
+Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos*/
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  font-size: larger;
+}
+
+.unread {
+  font-size: medium;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*CHAINING SELECTORS
+Cuando se encadenan es para que se aplique el mismo atributo a varias clases o ids, cuando se cumpla todas las condiciones*/
+
+.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
+  color: blue;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*SELECTOR DESCENDENTE (COMBINADOR): por ejemplo, div p seleccionará todos los elementos p que son descendientes de un elemento div*/
+/*La clase que se aplica a un padre pasa a los hijos, como se puede apreciar la clase list aplica a TODOS los hijos*/
+/*el selector li busca los li y aplica*/
+/*el selector li li busca los hijos de li y aplica*/
+
+
+
+.list {
+  color:darkred;
+}
+
+li {
+  list-style-type: disc;
+}
+
+li li {
+  list-style-type:square;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*CHILD SELECTOR SELECTOR DE HILO DIRECTO (COMBINADOR): selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).*/
+
+div > span {
+  background-color: yellow;
+}
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*SELECTOR DE HERMANO ADYACENTE (COMBINADOR): por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1*/
 
+.adjacent + li {
+  color: red;
+}
+
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
-/*SELECTOR DE HERMANO GENERAL (COMBINADOR): selecciona todos los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)*/
+/*SELECTOR DE HERMANO GENERAL (COMBINADOR): selecciona TODOS los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)*/
+
+h5 ~ span {
+  color: red;
+}
+
+/*NOTA: La diferencia entre descendiente e hijo, es que el hijo es el directo descendiente (solo un nivel de profundidad), mientras que el 
+descendiente es el que esta a cualquier nivel de profundidad.
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PSEUDO-CLASES: son selectores que permiten aplicar estilos a un elemento en función de su estado o posición en relación a otro elemento. 
+Se utilizan para seleccionar y aplicar estilos a elementos que no se pueden seleccionar con selectores de clase o ID, como por ejemplo el 
+primer elemento de una lista, un elemento al que se ha hecho clic o un elemento que se encuentra en un estado de foco.*/
 
 /*SELECTOR PSEUDO-CLASE: selecciona elementos que están en un estado específico o que cumplen ciertas condiciones (por ejemplo, :hover seleccionará un elemento cuando el cursor se coloque sobre él).*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*:active*/
+
+.joinBtn {
+  width: 10em;
+  height: 5ex;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.joinBtn:active {
+  box-shadow: 2px 2px 5px #fc894d;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*:any-link*/
+
+p {
+  font-weight: bold;
+}
+
+a:any-link {
+  color: forestgreen;
+  text-decoration-color: hotpink;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*:autofill*/
+
+
 
 /*SELECTOR PSEUDO-ELEMENTO: selecciona partes específicas de un elemento (por ejemplo, ::before seleccionará la parte delantera de un elemento antes de que se agregue contenido).*/
 
@@ -111,11 +226,6 @@ a[class$="in-clase"] {
 /*SELECTOR NEGACION: selecciona elementos que no cumplen con un selector específico (por ejemplo, :not(p) seleccionará todos los elementos que no sean párrafos).*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Combinadores: Los combinadores son elementos que se utilizan para combinar diferentes tipos de selectores y crear selectores más específicos. 
-Algunos de los combinadores que se pueden utilizar son el espacio en blanco (para seleccionar elementos descendientes), el signo mayor que (>) 
-(para seleccionar elementos hijos directos) y el signo más (+) y la tilde (~) (para seleccionar hermanos adyacentes y generales, respectivamente).*/
-
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Selectores anidados: Es posible anidar selectores en CSS para seleccionar elementos más específicos. Por ejemplo, ul li a seleccionará todos los 
@@ -139,42 +249,6 @@ más avanzados que se pueden utilizar para seleccionar partes específicas de un
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
-/*GROOPING SELECTORS
-Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene
-sus propios atributos
-.read,
-.unread {
-  color: white;
-  background-color: black;
-}
-
-.read {
-  several unique declarations
-}
-
-.unread {
-  several unique declarations
-}*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*CHAINING SELECTORS
-Cuando se encadenan es para que se aplique el mismo atributo a varias clases
-.subsection.header {
-  color: red;
-}
-
-.subsection#preview {
-  color: blue;
-}*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/* DESCENDANT COMBINATOR
-La clase que se aplica a un padre pasa a los hijos
-En este ejemplo gana el color beige en el p ya que es por especifidad (ir a CSS in deep for more info)*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Especificidad: La especificidad es un concepto que se utiliza para determinar qué regla de CSS se aplicará cuando hay varias reglas que 
 se aplican a un mismo elemento. Se calcula sumando el peso de cada tipo de selector utilizado en una regla. Por ejemplo, un selector de ID 
@@ -182,8 +256,7 @@ tiene un peso mayor que un selector de clase, que a su vez tiene un peso mayor q
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
-/*Herencia: Algunas propiedades de CSS se heredan de los elementos padres a los elementos hijos. Esto significa que si se aplica una 
-propiedad determinada a un elemento, los elementos hijos también la tendrán a menos que se especifique lo contrario.*/
+
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -213,12 +286,3 @@ input:checked seleccionará un elemento de entrada (como una casilla de verifica
 Por ejemplo, :first-child seleccionará el primer elemento hijo de su padre.*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
-
-p{
-    color:black;
-    background-color:gainsboro;
-}
-
-.subsection {
-  color: purple;
-}

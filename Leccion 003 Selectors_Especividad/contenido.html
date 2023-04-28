@@ -33,7 +33,7 @@
         <h4>Class Selector</h4>
         <h4>Selecciona todos los elementos DE LA PAGINA que tengan como clase "classy"</h4>
         <span class="classy">Aquí hay un span con algo de texto. que tiene como clase "classy"</span>
-        <span>Aquí hay otro. el cual es afectado por el type selector</span>
+        <span>Aquí hay otro. el cual es afectado por el type selector el cual dice que deberia ser azul pero por especividad gana el que dice ></span>
     </div>
 
     <hr/>
@@ -62,6 +62,96 @@
             <li><a class="in-clase" href="http://example.org">Ejemplo de enlace.org</a></li>
         </ul>
     </div>
+
+    <hr/>
+    <hr/>
+    <h2>Combinadores</h2>
+    <hr/>
+
+    <h4>Grouping Selectors</h4>
+    <h4>Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos</h4>
+
+    <p class="read">Este es un parrafo que comparte reglas con el parrafo de abajo y en adicion este parrafo tiene sus propias caracteristicas</p>
+    <p class="unread">Este es un parrafo que comparte reglas con el parrafo de arriba y en adicion este parrafo tiene sus propias caracteristicas</p>
+
+    <hr/>
+
+    <h4>Chaining Selectors</h4>
+    <h4>Cuando se agrupa es para que los atributos se apliquen cuando los elementos tengan al mismo tiempo lo que el selector posee</h4>
+
+    <div class="subsection header">
+        <p>Este es un parrafo que esta dentro de un div que tiene dos clases al mismo tiempo subsection y header</p>
+    </div>
+    <p class="header subsection">Este es un parrafo que tiene tambien la clase header y subsection</p>
     
+    <div class="subsection" id="preview">
+        <p>Este es un parrafo que tiene esta dentro de un div y al mismo tiempo el div tiene el id de preview</p>
+    </div>
+
+    <hr/>
+
+    <h4>Descendant Combinator</h4>
+    <h4>Se utiliza el espacio " " entre lo selectores para seleccionar los hijos del que diga</h4>
+
+    
+    <ul class="list">
+        <li>
+          <div>Item 1</div>
+          <ul>
+            <li>Subitem A</li>
+            <li>Subitem B</li>
+          </ul>
+        </li>
+        <li>
+          <div>Item 2</div>
+          <ul>
+            <li>Subitem A</li>
+            <li>Subitem B</li>
+          </ul>
+        </li>
+      </ul>
+
+    <hr/>
+
+    <h4>Child Selector</h4>
+    <h4>selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).</h4>
+
+    <div>
+        <span>
+          Este es un hijo directo.
+            <span>Span #2, in the span that's in the div.</span>
+        </span>
+    </div>
+    <span>Este espan esta fuera del div</span>
+
+    <hr/>
+
+    <h4>Adjacent Sibling Selector</h4>
+    <h4>por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1</h4>
+
+    <ul>
+        <li class="adjacent">One</li>
+        <li>Two!</li>
+        <li>Three</li>
+    </ul>
+
+    <hr/>
+
+    <h4>General sibling combinator</h4>
+    <h4>selecciona todos los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)</h4>
+
+    <span>This is not red.</span>
+    <h5>Here is a h5.</h5>
+    <code>Here is some code.</code>
+    <span>And here is a red span!</span>
+    <span>And this is a red span!</span>
+    <code>More code…</code>
+    <div>How are you?</div>
+    <p>Whatever it may be, keep smiling.</p>
+    <h1>Dream big</h1>
+    <span>And yet again this is a red span!</span>
+
+    <hr/>
+
 </body>
 </html>
