@@ -13,9 +13,17 @@ Example:
 
 * {
   color: purple;
+}*/
+
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
 }
 
----------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------
 
 - TYPE SELECTOR or ELEMENT SELECTOR or TAG SELECTOR: cuando se busca por tipo (ojo afecta a todos los que sean de este tipo)

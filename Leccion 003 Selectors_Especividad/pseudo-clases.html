@@ -7,8 +7,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="styles.css">
+
     </head>
-    <body style="background-color:gray">
+    <body>
         
     <a href="introaCSS.html" 
     >ir a Intro CSS</a>
@@ -16,14 +18,14 @@
     <hr/>
 
     <h1>PSEUDO-CLASES</h1>
-    <P>Son selectores que permiten aplicar estilos a un elemento en función de su estado o posición en relación a otro elemento. 
+    <p>Son selectores que permiten aplicar estilos a un elemento en función de su estado o posición en relación a otro elemento. 
         Se utilizan para seleccionar y aplicar estilos a elementos que no se pueden seleccionar con selectores de clase o ID, como por ejemplo el 
-        primer elemento de una lista, un elemento al que se ha hecho clic o un elemento que se encuentra en un estado de foco.</P>
+        primer elemento de una lista, un elemento al que se ha hecho clic o un elemento que se encuentra en un estado de foco.</p>
     <p>Selecciona elementos que están en un estado específico o que cumplen ciertas condiciones (por ejemplo, :hover seleccionará un elemento cuando el cursor se coloque sobre él).</p>
 
     <hr/>
         
-    <div>
+    <div class="cards">
         <h4>:active</h4>
         <h4>The active pseudo-class selector selects the element when selecting the element with the mouse (the mouse-click).</h4>
         <h3>Tener en cuenta: LVHA-order: :link — :visited — :hover — :active.</h3>
@@ -32,29 +34,55 @@
 
     <hr/>
 
-    <p>
-        Pages that you might have visited:
-    </p>
-    <ul>
-        <li>
-            <a href="https://developer.mozilla.org">MDN Web Docs</a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/YouTube">Google</a>
-        </li>
-    </ul>
-    <p>
-        Pages unlikely to be in your history:
-    </p>
-    <ul>
-        <li>
-            <a href="https://developer.mozilla.org/missing-3">Random MDN page</a>
-        </li>
-        <li>
-            <a href="https://example.com/missing-3">Random Example page</a>
-        </li>
-    </ul>
+    <div>
+        <h4>:any-link</h4>
+        <h4>it matches every a or area element that has an href attribute.</h4>
+        <p>
+            Pages that you might have visited:
+        </p>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org">MDN Web Docs</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/YouTube">Google</a>
+            </li>
+        </ul>
+        <p>
+            Pages unlikely to be in your history:
+        </p>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/missing-3">Random MDN page</a>
+            </li>
+            <li>
+                <a href="https://example.com/missing-3">Random Example page</a>
+            </li>
+        </ul>
+    </div>
 
+    <hr/>
+
+    <div>
+        <h4>:autofill</h4>
+        <h4>The active pseudo-class selector selects the element when selecting the element with the mouse (the mouse-click).</h4>
+        <h3>Tener en cuenta: LVHA-order: :link — :visited — :hover — :active.</h3>
+        <button class="joinBtn">Subscribe</button>
+    </div>
+
+    <div class="cards">
+        <div>
+            <p class="codepen" data-height="250" data-default-tab="html,result" data-slug-hash="QWdMGjE" data-user="web-dot-dev" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/QWdMGjE">
+                Learn CSS - Pseudo-classes intro</a> by web.dev (<a href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </div>
+        
+    </div>
+    
+      
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="" async defer></script>
     </body>
 </html>
