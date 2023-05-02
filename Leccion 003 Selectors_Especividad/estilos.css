@@ -24,7 +24,7 @@ Example:
 }
 
 .cards{
-  width: 50%;
+  width: 60%;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
@@ -185,37 +185,9 @@ h5 ~ span {
 descendiente es el que esta a cualquier nivel de profundidad.
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*PSEUDO-CLASES: son selectores que permiten aplicar estilos a un elemento en función de su estado o posición en relación a otro elemento. 
-Se utilizan para seleccionar y aplicar estilos a elementos que no se pueden seleccionar con selectores de clase o ID, como por ejemplo el 
-primer elemento de una lista, un elemento al que se ha hecho clic o un elemento que se encuentra en un estado de foco.*/
-
-/*SELECTOR PSEUDO-CLASE: selecciona elementos que están en un estado específico o que cumplen ciertas condiciones (por ejemplo, :hover seleccionará un elemento cuando el cursor se coloque sobre él).*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*:active*/
-
-
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*:any-link*/
-
-p {
-  font-weight: bold;
+#fs-toggle:fullscreen {
+  background-color: #faa;
 }
-
-a:any-link {
-  color: forestgreen;
-  text-decoration-color: hotpink;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*:autofill*/
-
 
 
 /*SELECTOR PSEUDO-ELEMENTO: selecciona partes específicas de un elemento (por ejemplo, ::before seleccionará la parte delantera de un elemento antes de que se agregue contenido).*/
