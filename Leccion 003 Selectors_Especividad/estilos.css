@@ -23,6 +23,10 @@ Example:
 	box-sizing: border-box;
 }
 
+.cards{
+  width: 50%;
+}
+
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------
 
@@ -193,20 +197,7 @@ primer elemento de una lista, un elemento al que se ha hecho clic o un elemento 
 
 /*:active*/
 
-.joinBtn {
-  width: 10em;
-  height: 5ex;
-  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
 
-.joinBtn:active {
-  box-shadow: 2px 2px 5px #fc894d;
-}
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
