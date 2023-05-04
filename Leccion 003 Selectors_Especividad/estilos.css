@@ -4,18 +4,7 @@
 
 /* TIPOS DE SELECTORES MAS COMUNES
 
-/*---------------------------------------------------------------------------------------------------------------------------------
-
-- UNIVERSAL SELECTOR: Uno de los mas poderosos, baja especividad, alto costo en performance (tiene que chekear cada elemento haber si coincide)
-One common use of the universal selector is in a "reset" or "normalize" CSS file.
-
-Example:
-
-* {
-  color: purple;
-}*/
-
-@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 
 *,
 *:after,
@@ -24,236 +13,26 @@ Example:
 }
 
 .cards{
-  width: 60%;
+  width: 100%;
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------
-
-- TYPE SELECTOR or ELEMENT SELECTOR or TAG SELECTOR: cuando se busca por tipo (ojo afecta a todos los que sean de este tipo)
-
-Example:
-
-Selecciona todos los elementos DE LA PAGINA <SPAN>*/
-
-span {
-  background-color: skyblue;
+.modal_exterior{
+  display:none; 
+  position: fixed; top: 0; left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 999;
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------
-
-- CLASS SELECTOR:
-
-Example:*/
-
-span.classy {
-  background-color: DodgerBlue;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------
-
-- ID SELECTORS: NO UTILIZARLOS TAN SEGUIDOS, SOLO CUANDO SEA IMPRESINDIBLE, OJO LOS IDS NO SE PUEDEN REPETIR EN UNA PAGINA
-
-El elemento con id="demo" */
-
-#identified {
-  background-color: skyblue;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*ATRIBUTE SELECTORS ALONE: por ejemplo, a[tittle] selecciona elementos <a> con un atributo title.*/
-
-a[title] {
-  color: purple;
-}
-
-/*Elementos <a> con un href que coincida con "http://example.com*/
-
-a[href="http://example.com"] {
-  color: red;
-}
-
-/*ATRIBUTE SELECTORS WITH PREFIX: por ejemplo, [class^="mi"] seleccionará todos los elementos <a> con class que empiecen con "mi".*/
-
-a[class^="mi"] {
-  color: aquamarine;
-}
-
-/*SELECTOR DE ATRIBUTO CON SUBCADENA: por ejemplo, [class*="laclase"] seleccionará todos los elementos <a> con class que contengan "laclase"*/
-
-a[class*="laclase"] {
-  color:darkgoldenrod;
-}
-
-/*ATRIBUTE SELECTORS WITH SUFIJO: por ejemplo, [class$="clase"] seleccionará todos los elementos con class que terminen con "clase"*/
-
-a[class$="in-clase"] {
-  color:darksalmon;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Herencia: Algunas propiedades de CSS se heredan de los elementos padres a los elementos hijos. Esto significa que si se aplica una 
-propiedad determinada a un elemento, los elementos hijos también la tendrán a menos que se especifique lo contrario.*/
-
-/*COMBINADORES O COMBINATORS: Los combinadores son elementos que se utilizan para combinar diferentes tipos de selectores y crear selectores más específicos. 
-Algunos de los combinadores que se pueden utilizar son el espacio en blanco (para seleccionar elementos descendientes), el signo mayor que (>) 
-(para seleccionar elementos hijos directos) y el signo más (+) y la tilde (~) (para seleccionar hermanos adyacentes y generales, respectivamente).*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*GROOPING SELECTORS
-Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos*/
-.read,
-.unread {
-  color: white;
-  background-color: black;
-}
-
-.read {
-  font-size: larger;
-}
-
-.unread {
-  font-size: medium;
+.modal_interior{
+  position: absolute; top: 50%; left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: white; 
+  padding: 20px; 
+  width: 80%; 
+  height: 80%;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
-/*CHAINING SELECTORS
-Cuando se encadenan es para que se aplique el mismo atributo a varias clases o ids, cuando se cumpla todas las condiciones*/
-
-.subsection.header {
-  color: red;
-}
-
-.subsection#preview {
-  color: blue;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*SELECTOR DESCENDENTE (COMBINADOR): por ejemplo, div p seleccionará todos los elementos p que son descendientes de un elemento div*/
-/*La clase que se aplica a un padre pasa a los hijos, como se puede apreciar la clase list aplica a TODOS los hijos*/
-/*el selector li busca los li y aplica*/
-/*el selector li li busca los hijos de li y aplica*/
-
-
-
-.list {
-  color:darkred;
-}
-
-li {
-  list-style-type: disc;
-}
-
-li li {
-  list-style-type:square;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*CHILD SELECTOR SELECTOR DE HILO DIRECTO (COMBINADOR): selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).*/
-
-div > span {
-  background-color: yellow;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*SELECTOR DE HERMANO ADYACENTE (COMBINADOR): por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1*/
-
-.adjacent + li {
-  color: red;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*SELECTOR DE HERMANO GENERAL (COMBINADOR): selecciona TODOS los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)*/
-
-h5 ~ span {
-  color: red;
-}
-
-/*NOTA: La diferencia entre descendiente e hijo, es que el hijo es el directo descendiente (solo un nivel de profundidad), mientras que el 
-descendiente es el que esta a cualquier nivel de profundidad.
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-#fs-toggle:fullscreen {
-  background-color: #faa;
-}
-
-
-/*SELECTOR PSEUDO-ELEMENTO: selecciona partes específicas de un elemento (por ejemplo, ::before seleccionará la parte delantera de un elemento antes de que se agregue contenido).*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*SELECTOR NEGACION: selecciona elementos que no cumplen con un selector específico (por ejemplo, :not(p) seleccionará todos los elementos que no sean párrafos).*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores anidados: Es posible anidar selectores en CSS para seleccionar elementos más específicos. Por ejemplo, ul li a seleccionará todos los 
-elementos a que se encuentren dentro de una lista (ul) y dentro de un elemento de lista (li).*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de estado: Los selectores de estado, como :hover y :active, se utilizan para seleccionar elementos que se encuentran en un estado específico. 
-Por ejemplo, a:hover seleccionará un enlace cuando el cursor se coloque sobre él.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de atributos avanzados: Además de los selectores de atributos básicos que mencioné anteriormente, hay algunos selectores de atributos más 
-avanzados que se pueden utilizar para seleccionar elementos con atributos específicos que cumplen ciertas condiciones. Por ejemplo, input[type="text"]:focus 
-seleccionará un campo de texto cuando esté en foco.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de pseudo-elementos avanzados: Además de los selectores de pseudo-elementos básicos como ::before y ::after, hay algunos selectores de pseudo-elementos 
-más avanzados que se pueden utilizar para seleccionar partes específicas de un elemento. Por ejemplo, ::first-line seleccionará la primera línea de un elemento de bloque.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*Especificidad: La especificidad es un concepto que se utiliza para determinar qué regla de CSS se aplicará cuando hay varias reglas que 
-se aplican a un mismo elemento. Se calcula sumando el peso de cada tipo de selector utilizado en una regla. Por ejemplo, un selector de ID 
-tiene un peso mayor que un selector de clase, que a su vez tiene un peso mayor que un selector de elemento.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de contexto: Los selectores de contexto se utilizan para aplicar estilos a un elemento basándose en el contexto en el que 
-se encuentra. Por ejemplo, body.home h1 seleccionará todos los encabezados h1 que se encuentren dentro del cuerpo de una página de inicio 
-(home).*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de atributos de contenido: Los selectores de atributos de contenido se utilizan para seleccionar elementos que contienen 
-cierto valor en su atributo. Por ejemplo, a[href*="example.com"] seleccionará todos los enlaces que contengan la cadena "example.com" en su 
-atributo href.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de negación: Los selectores de negación se utilizan para seleccionar elementos que no cumplen con ciertos criterios. Por ejemplo, 
-:not(.clase) seleccionará todos los elementos que no tengan la clase "clase".*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores dinámicos: Los selectores dinámicos se utilizan para seleccionar elementos basándose en su estado actual. Por ejemplo, 
-input:checked seleccionará un elemento de entrada (como una casilla de verificación) que esté seleccionado.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Selectores de ubicación: Los selectores de ubicación se utilizan para seleccionar elementos basados en su posición en la página. 
-Por ejemplo, :first-child seleccionará el primer elemento hijo de su padre.*/
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/

@@ -7,151 +7,293 @@
     <title>Selectores y Especividad</title>
     
     <link rel="stylesheet" href="estilos.css"/>
-</head>
-<body style="background-color:gray">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  </head>
+<body>
     <a href="introaCSS.html" 
     >ir a Intro CSS</a>
 
+    
+
+    <h1>SELECTORS AND SPECIFITY</h1>
+
+
     <hr/>
 
-    <h1>Tipos de Selectores con Ejemplos</h1>
-    <h2>Selectores Basicos</h2>
+    <button id="modal-button">Selector Universal</button>
+    <button id="modal-button2">Type Selector</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Class Selector</button>
+
+    <div id="modal" class="modal_exterior">
+      <div class="modal_interior">
+
+        <h2>UNIVERSAL SELECTOR</h2>
+
+        <p>Uno de los mas poderosos, baja especividad, alto costo en performance (tiene que chekear cada elemento haber si coincide)
+          One common use of the universal selector is in a "reset" or "normalize" CSS file.</p>
+        
+         <p>se puede combinar por ejemplo plate * como se mostro en el ejemplo del ejercicio de los platos para seleccionar todos los platos</p>
+        
+         <div class="cards">
+          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GRYOygy" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/spjhon/pen/GRYOygy">
+            Universal Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          </div>
+
+      </div> 
+    </div>
+
+    
 
     <hr/>
 
-    <div>
-        <h4>Type Selector, tambien llamado Tag Selector</h4>
-        <h4>Selecciona todos los elementos DE LA PAGINA que sean de tipo span</h4>
-        <span>Aquí hay un elemento 'span' con algo de texto.</span>
-        <p>Aquí hay un elemento 'p' con algo de texto.</p>
-        <span>Aquí hay un elemento 'span' con más texto.</span>
+    <div id="modal2" class="modal_exterior">
+      <div class="modal_interior">
+
+        <h2>TYPE SELECTOR or ELEMENT SELECTOR or TAG SELECTOR</h2>
+
+        <p>cuando se busca por tipo (ojo afecta a todos los que sean de este tipo)</p>
+        <div class="cards">
+          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwejxWj" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/spjhon/pen/RwejxWj">
+            Type Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+
+    <hr/>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CLASS SELECTOR o SELECTOR DE CLASE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+        <p>Cuando se busca por clase</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWZOaNo" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/spjhon/pen/QWZOaNo">
+          Class Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr/>
 
     <div>
-        <h4>Class Selector</h4>
-        <h4>Selecciona todos los elementos DE LA PAGINA que tengan como clase "classy"</h4>
-        <span class="classy">Aquí hay un span con algo de texto. que tiene como clase "classy"</span>
-        <span>Aquí hay otro. el cual es afectado por el type selector el cual dice que deberia ser azul pero por especividad gana el que dice ></span>
+
+        <h2>ID SELECTOR</h2>
+
+        <p>NO UTILIZARLOS TAN SEGUIDOS, SOLO CUANDO SEA IMPRESINDIBLE, OJO LOS IDS NO SE PUEDEN REPETIR EN UNA PAGINA El elemento con id="demo" */</p>
+        
     </div>
 
-    <hr/>
-
-    <div>
-        <h4>ID Selector</h4>
-        <h4>No utilizarlos tan seguido, solo cuando sea impresindible, ojo los ids no se pueden repetir en una pagina</h4>
-        <div id="identified">¡Este div tiene un ID especial!</div>
-        <div>Este solo es un div regular.</div>
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZEqavpE" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/ZEqavpE">
+        Id Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
     </div>
 
     <hr/>
     <hr/>
     <h2>Selectores Por Atributos</h2>
+    <p>El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un atributo determinado.</p>
+
+    <p>Herencia: Algunas propiedades de CSS se heredan de los elementos padres a los elementos hijos. Esto significa que si se aplica una 
+      propiedad determinada a un elemento, los elementos hijos también la tendrán a menos que se especifique lo contrario.</p>
+
+    <p>Especificidad: La especificidad es un concepto que se utiliza para determinar qué regla de CSS se aplicará cuando hay varias reglas que 
+      se aplican a un mismo elemento. Se calcula sumando el peso de cada tipo de selector utilizado en una regla. Por ejemplo, un selector de ID 
+      tiene un peso mayor que un selector de clase, que a su vez tiene un peso mayor que un selector de elemento.</p>
+    <hr/>
     <hr/>
 
     <div>
-        <h4>ATRIBUTE SELECTORS</h4>
-        <h4>El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un atributo determinado.</h4>
-        <h4>por ejemplo, a[tittle] selecciona elementos <a> con un atributo title.</h4>
-        <ul>
-            <li><a href="#internal" title="Ninguno">Enlace interno</a></li>
-            <li><a href="http://example.com">Enlace de ejemplo para seleccionar por atributo href</a></li>
-            <li><a class="mi-style" href="#InSensitive">Ejemplo de enlace con selector por atributo que empieza por mi</a></li>
-            <li><a class="laclase" href="#InSensitive">Ejemplo de enlace con selector por atributo *</a></li>
-            <li><a class="in-clase" href="http://example.org">Ejemplo de enlace.org</a></li>
-        </ul>
+
+      <h2>ATRIBUTE SELECTOR</h2>
+
+      <p>Por ejemplo, a[tittle] selecciona elementos a> con un atributo title.</p>
+      <p>Selectores de atributos avanzados: Además de los selectores de atributos básicos que mencioné anteriormente, hay algunos selectores de atributos más 
+        avanzados que se pueden utilizar para seleccionar elementos con atributos específicos que cumplen ciertas condiciones. Por ejemplo, input[type="text"]:focus 
+        seleccionará un campo de texto cuando esté en foco.</p>
+      
+    </div>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJBOzxa" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/OJBOzxa">
+        Atribute Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
     </div>
 
     <hr/>
     <hr/>
     <h2>Combinadores</h2>
+    <p>Los combinadores son elementos que se utilizan para combinar diferentes tipos de selectores y crear selectores más específicos. 
+      Algunos de los combinadores que se pueden utilizar son el espacio en blanco (para seleccionar elementos descendientes), el signo mayor que (>) 
+      (para seleccionar elementos hijos directos) y el signo más (+) y la tilde (~) (para seleccionar hermanos adyacentes y generales, respectivamente).</p>
+    <hr/>
     <hr/>
 
-    <h4>Grouping Selectors</h4>
-    <h4>Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos</h4>
-
-    <p class="read">Este es un parrafo que comparte reglas con el parrafo de abajo y en adicion este parrafo tiene sus propias caracteristicas</p>
-    <p class="unread">Este es un parrafo que comparte reglas con el parrafo de arriba y en adicion este parrafo tiene sus propias caracteristicas</p>
-
     <hr/>
-
-    <h4>Chaining Selectors</h4>
-    <h4>Cuando se agrupa es para que los atributos se apliquen cuando los elementos tengan al mismo tiempo lo que el selector posee</h4>
-
-    <div class="subsection header">
-        <p>Este es un parrafo que esta dentro de un div que tiene dos clases al mismo tiempo subsection y header</p>
-    </div>
-    <p class="header subsection">Este es un parrafo que tiene tambien la clase header y subsection</p>
-    
-    <div class="subsection" id="preview">
-        <p>Este es un parrafo que tiene esta dentro de un div y al mismo tiempo el div tiene el id de preview</p>
-    </div>
-
-    <hr/>
-
-    <h4>Descendant Combinator</h4>
-    <h4>Se utiliza el espacio " " entre lo selectores para seleccionar los hijos del que diga</h4>
-
-    
-    <ul class="list">
-        <li>
-          <div>Item 1</div>
-          <ul>
-            <li>Subitem A</li>
-            <li>Subitem B</li>
-          </ul>
-        </li>
-        <li>
-          <div>Item 2</div>
-          <ul>
-            <li>Subitem A</li>
-            <li>Subitem B</li>
-          </ul>
-        </li>
-      </ul>
-
-    <hr/>
-
-    <h4>Child Selector</h4>
-    <h4>selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).</h4>
 
     <div>
-        <span>
-          Este es un hijo directo.
-            <span>Span #2, in the span that's in the div.</span>
-        </span>
+
+      <h2>Grouping Selectors</h2>
+
+      <p>Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos</p>
+      
     </div>
-    <span>Este espan esta fuera del div</span>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxyPpzr" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/xxyPpzr">
+        Grouping Selectors</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
 
     <hr/>
 
-    <h4>Adjacent Sibling Selector</h4>
-    <h4>por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1</h4>
+    <div>
 
-    <ul>
-        <li class="adjacent">One</li>
-        <li>Two!</li>
-        <li>Three</li>
-    </ul>
+      <h2>Chaining Selectors</h2>
+
+      <p>Cuando se agrupa es para que los atributos se apliquen cuando los elementos tengan al mismo tiempo lo que el selector posee</p>
+      <p>Selectores anidados: Es posible anidar selectores en CSS para seleccionar elementos más específicos. Por ejemplo, ul li a seleccionará todos los 
+        elementos a que se encuentren dentro de una lista (ul) y dentro de un elemento de lista (li).</p>
+    </div>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzJEYjL" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/YzJEYjL">
+        Chaining Selectors</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
+
+    <hr/>
+
+    <div>
+
+      <h2>SELECTOR DESCENDENTE (COMBINADOR)</h2>
+
+      <p>por ejemplo, div p seleccionará todos los elementos p que son descendientes de un elemento div. La clase que se aplica a un padre pasa a los hijos, como se puede apreciar la clase list aplica a TODOS los hijos el selector li busca los li y aplica el selector li li busca los hijos de li y aplica</p>
+      
+    </div>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNaXdLe" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/WNaXdLe">
+        Descendent Combinator Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
 
     <hr/>
 
-    <h4>General sibling combinator</h4>
-    <h4>selecciona todos los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)</h4>
+    <div>
 
-    <span>This is not red.</span>
-    <h5>Here is a h5.</h5>
-    <code>Here is some code.</code>
-    <span>And here is a red span!</span>
-    <span>And this is a red span!</span>
-    <code>More code…</code>
-    <div>How are you?</div>
-    <p>Whatever it may be, keep smiling.</p>
-    <h1>Dream big</h1>
-    <span>And yet again this is a red span!</span>
+      <h2>CHILD SELECTOR, SELECTOR DE HILO DIRECTO (COMBINADOR)</h2>
+
+      <p>selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).</p>
+      
+    </div>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBJVpLV" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/qBJVpLV">
+        Child Selector Combinator</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
 
     <hr/>
+
+    <div>
+
+      <h2>Adjacent Sibling Selector</h2>
+
+      <p>por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1</p>
+      
+    </div>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwEryNd" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/VwEryNd">
+        Adjacent Sibiling  Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
+
+    <hr/>
+
+    <div>
+
+      <h2>Selector Hermano General</h2>
+
+      <p>selecciona TODOS los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)</p>
+      <p>NOTA: La diferencia entre descendiente e hijo, es que el hijo es el directo descendiente (solo un nivel de profundidad), mientras que el 
+        descendiente es el que esta a cualquier nivel de profundidad.</p>
+    </div>
+
+    <div class="cards">
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dygZJEK" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/spjhon/pen/dygZJEK">
+        General sibling combinator</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
+
+    <hr/>
+
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script>
+      const modalButton = document.getElementById('modal-button');
+      const modal = document.getElementById('modal');
+
+      const modalButton2 = document.getElementById('modal-button2');
+      const modal2 = document.getElementById('modal2');
+  
+      modalButton.addEventListener('click', () => {
+          modal.style.display = 'block';
+      });
+  
+      modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+              modal.style.display = 'none';
+          }
+      });
+
+      modalButton2.addEventListener('click', () => {
+          modal2.style.display = 'block';
+      });
+  
+      modal2.addEventListener('click', (e) => {
+          if (e.target === modal2) {
+              modal2.style.display = 'none';
+          }
+      });
+    </script>
+ 
 
 </body>
 </html>
