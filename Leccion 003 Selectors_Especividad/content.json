@@ -1,0 +1,70 @@
+{
+    "Selectors": [
+  {
+    "id": "selector1",
+    "titulo": "UNIVERSAL SELECTOR",
+    "parrafo": "<p>Uno de los mas poderosos, baja especividad, alto costo en performance (tiene que chekear cada elemento haber si coincide). One common use of the universal selector is in a \"reset\" or \"normalize\" CSS file.</p>\n    <p>se puede combinar por ejemplo plate * como se mostro en el ejemplo del ejercicio de los platos para seleccionar todos los platos</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"GRYOygy\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/GRYOygy\">\n    Universal Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector2",
+    "titulo": "TYPE SELECTOR OR ELEMENT SELECTOR OR TAG SELECTOR",
+    "parrafo": "<p>cuando se busca por tipo (ojo afecta a todos los que sean de este tipo)</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"RwejxWj\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/RwejxWj\">\n    Type Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector3",
+    "titulo": "CLASS SELECTOR",
+    "parrafo": "<p>Cuando se busca por clase</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"QWZOaNo\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/QWZOaNo\">\n    Class Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n  </p>"
+  },
+  {
+    "id": "selector4",
+    "titulo": "ID SELECTOR",
+    "parrafo": "<p>NO UTILIZARLOS TAN SEGUIDOS, SOLO CUANDO SEA IMPRESINDIBLE, OJO LOS IDS NO SE PUEDEN REPETIR EN UNA PAGINA El elemento con id=\"demo\"</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"ZEqavpE\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/ZEqavpE\">\n    Id Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector5",
+    "titulo": "ATRIBUTE SELECTOR",
+    "parrafo": "<p>Por ejemplo, a[tittle] selecciona elementos a> con un atributo title.</p>\n    <p>Selectores de atributos avanzados: Además de los selectores de atributos básicos que mencioné anteriormente, hay algunos selectores de atributos más \n      avanzados que se pueden utilizar para seleccionar elementos con atributos específicos que cumplen ciertas condiciones. Por ejemplo, input[type=\"text\"]:focus \n      seleccionará un campo de texto cuando esté en foco.</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"OJBOzxa\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/OJBOzxa\">\n    Atribute Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector6",
+    "titulo": "GROUPING SELECTORS",
+    "parrafo": "<p>Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"xxyPpzr\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/xxyPpzr\">\n    Grouping Selectors</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector7",
+    "titulo": "CHAINING SELECTORS",
+    "parrafo": "<p>Cuando se agrupa es para que los atributos se apliquen cuando los elementos tengan al mismo tiempo lo que el selector posee</p>\n    <p>Selectores anidados: Es posible anidar selectores en CSS para seleccionar elementos más específicos. Por ejemplo, ul li a seleccionará todos los \n      elementos a que se encuentren dentro de una lista (ul) y dentro de un elemento de lista (li).</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"YzJEYjL\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/YzJEYjL\">\n    Chaining Selectors</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector8",
+    "titulo": "SELECTOR DESCENDENTE",
+    "parrafo": "<p>por ejemplo, div p seleccionará todos los elementos p que son descendientes de un elemento div. La clase que se aplica a un padre pasa a los hijos, como se puede apreciar la clase list aplica a TODOS los hijos el selector li busca los li y aplica el selector li li busca los hijos de li y aplica</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"WNaXdLe\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/WNaXdLe\">\n    Descendent Combinator Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector9",
+    "titulo": "CHILD SELECTOR, SELECTOR DE HILO DIRECTO",
+    "parrafo": "<p>selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"qBJVpLV\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/qBJVpLV\">\n    Child Selector Combinator</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n  </p>"
+  },
+  {
+    "id": "selector10",
+    "titulo": "ADJACENT SIBLING SELECTOR",
+    "parrafo": "<p>por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"VwEryNd\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/VwEryNd\">\n    Adjacent Sibiling  Selector</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n    </p>"
+  },
+  {
+    "id": "selector11",
+    "titulo": "SELECTOR HERMANO GENERAL",
+    "parrafo": "<p>selecciona TODOS los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)</p>\n    <p>NOTA: La diferencia entre descendiente e hijo, es que el hijo es el directo descendiente (solo un nivel de profundidad), mientras que el \n      descendiente es el que esta a cualquier nivel de profundidad.</p>",
+    "codepen": "<p class=\"codepen\" data-height=\"300\" data-default-tab=\"html,result\" data-slug-hash=\"dygZJEK\" data-user=\"spjhon\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n    <span>See the Pen <a href=\"https://codepen.io/spjhon/pen/dygZJEK\">\n    General sibling combinator</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.</span>\n  </p>"
+  }
+]
+}

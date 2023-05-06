@@ -21,25 +21,24 @@
     </div>
   </nav>
 
-
     <a href="introaCSS.html" 
     >ir a Intro CSS</a>
-
-    
 
     <h1>SELECTORS AND SPECIFITY</h1>
 
     <hr/>
-
+    <hr/>
+    <h2>Basic Selectors</h2>
+    <hr/>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector1">Universal Selector</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector2">Type Selector</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector3">Class Selector</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector4">Id Selector</button>
 
-
     <hr/>
     <hr/>
     <h2>Selectores Por Atributos</h2>
+    <hr/>
     <p>El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un atributo determinado.</p>
 
     <p>Herencia: Algunas propiedades de CSS se heredan de los elementos padres a los elementos hijos. Esto significa que si se aplica una 
@@ -49,153 +48,33 @@
       se aplican a un mismo elemento. Se calcula sumando el peso de cada tipo de selector utilizado en una regla. Por ejemplo, un selector de ID 
       tiene un peso mayor que un selector de clase, que a su vez tiene un peso mayor que un selector de elemento.</p>
     <hr/>
-    <hr/>
 
-    <div>
-
-      <h2>ATRIBUTE SELECTOR</h2>
-
-      <p>Por ejemplo, a[tittle] selecciona elementos a> con un atributo title.</p>
-      <p>Selectores de atributos avanzados: Además de los selectores de atributos básicos que mencioné anteriormente, hay algunos selectores de atributos más 
-        avanzados que se pueden utilizar para seleccionar elementos con atributos específicos que cumplen ciertas condiciones. Por ejemplo, input[type="text"]:focus 
-        seleccionará un campo de texto cuando esté en foco.</p>
-      
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJBOzxa" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/OJBOzxa">
-        Atribute Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector5">Atribute Selector</button>
 
     <hr/>
     <hr/>
+
     <h2>Combinadores</h2>
     <p>Los combinadores son elementos que se utilizan para combinar diferentes tipos de selectores y crear selectores más específicos. 
       Algunos de los combinadores que se pueden utilizar son el espacio en blanco (para seleccionar elementos descendientes), el signo mayor que (>) 
       (para seleccionar elementos hijos directos) y el signo más (+) y la tilde (~) (para seleccionar hermanos adyacentes y generales, respectivamente).</p>
     <hr/>
-    <hr/>
 
-    <hr/>
-
-    <div>
-
-      <h2>Grouping Selectors</h2>
-
-      <p>Cuando se agrupa es para que los atributos se apliquen a ambas clases y luego cada clase tiene sus propios atributos</p>
-      
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxyPpzr" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/xxyPpzr">
-        Grouping Selectors</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
-
-    <hr/>
-
-    <div>
-
-      <h2>Chaining Selectors</h2>
-
-      <p>Cuando se agrupa es para que los atributos se apliquen cuando los elementos tengan al mismo tiempo lo que el selector posee</p>
-      <p>Selectores anidados: Es posible anidar selectores en CSS para seleccionar elementos más específicos. Por ejemplo, ul li a seleccionará todos los 
-        elementos a que se encuentren dentro de una lista (ul) y dentro de un elemento de lista (li).</p>
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzJEYjL" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/YzJEYjL">
-        Chaining Selectors</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
-
-    <hr/>
-
-    <div>
-
-      <h2>SELECTOR DESCENDENTE (COMBINADOR)</h2>
-
-      <p>por ejemplo, div p seleccionará todos los elementos p que son descendientes de un elemento div. La clase que se aplica a un padre pasa a los hijos, como se puede apreciar la clase list aplica a TODOS los hijos el selector li busca los li y aplica el selector li li busca los hijos de li y aplica</p>
-      
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNaXdLe" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/WNaXdLe">
-        Descendent Combinator Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
-
-    <hr/>
-
-    <div>
-
-      <h2>CHILD SELECTOR, SELECTOR DE HILO DIRECTO (COMBINADOR)</h2>
-
-      <p>selecciona elementos que son hijos directos de otro elemento (por ejemplo, div > p seleccionará todos los elementos p que son hijos directos de un elemento div).</p>
-      
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBJVpLV" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/qBJVpLV">
-        Child Selector Combinator</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
-
-    <hr/>
-
-    <div>
-
-      <h2>Adjacent Sibling Selector</h2>
-
-      <p>por ejemplo, h1 + p seleccionará el primer elemento p que sigue inmediatamente después de un elemento h1</p>
-      
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwEryNd" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/VwEryNd">
-        Adjacent Sibiling  Selector</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
-
-    <hr/>
-
-    <div>
-
-      <h2>Selector Hermano General</h2>
-
-      <p>selecciona TODOS los elementos que siguen después de otro elemento (por ejemplo, h1 ~ p seleccionará todos los elementos p que siguen después de un elemento h1)</p>
-      <p>NOTA: La diferencia entre descendiente e hijo, es que el hijo es el directo descendiente (solo un nivel de profundidad), mientras que el 
-        descendiente es el que esta a cualquier nivel de profundidad.</p>
-    </div>
-
-    <div class="cards">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dygZJEK" data-user="spjhon" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/spjhon/pen/dygZJEK">
-        General sibling combinator</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector6">Grouping Selectors</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector7">Chaining Selectors</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector8">Selector Descendiente</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector9">Child Selector</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector10">Adjacent Sibling Selector</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector11">Selector Hermano General</button>
 
     <hr/>
 
     <div class="main_container"></div>
 
-    <script aync src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script async src="./script.js"></script>
+    
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script async src="./script.js"></script>
  
 </body>
 </html>
