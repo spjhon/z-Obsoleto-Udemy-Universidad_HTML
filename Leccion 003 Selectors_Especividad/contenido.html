@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectores y Especividad</title>
-    
+  
     <link rel="stylesheet" href="estilos.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   
@@ -14,70 +14,35 @@
 
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./introaCSS.html">
         <img src="./img/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
         CSS REFERENCE DOCUMENT
       </a>
     </div>
   </nav>
 
-    <a href="introaCSS.html" 
-    >ir a Intro CSS</a>
+    <div class="d-flex justify-content-around" id="main">
 
-    <h1>SELECTORS AND SPECIFITY</h1>
+      <div class="list-group">
+        <a href="./contenido.html" class="list-group-item list-group-item-action list-group-item-dark">Selectors And Specifity</a>
+      </div>
+  
+      <div class="card border-dark mb-3 shadow p-3 mb-5 bg-body-tertiary rounded" style="max-width: 80rem;">
+        <div class="card-header"><h1>SELECTORS AND SPECIFITY</h1></div>
+          <div class="card-body">
+            <div class="main_container">
+          
+            </div>
+          </div>
+      </div>
 
-    <hr/>
-    <hr/>
-    <h2>Basic Selectors</h2>
-    <hr/>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector1">Universal Selector</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector2">Type Selector</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector3">Class Selector</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector4">Id Selector</button>
-
-    <hr/>
-    <hr/>
-    <h2>Selectores Por Atributos</h2>
-    <hr/>
-    <p>El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un atributo determinado.</p>
-
-    <p>Herencia: Algunas propiedades de CSS se heredan de los elementos padres a los elementos hijos. Esto significa que si se aplica una 
-      propiedad determinada a un elemento, los elementos hijos también la tendrán a menos que se especifique lo contrario.</p>
-
-    <p>Especificidad: La especificidad es un concepto que se utiliza para determinar qué regla de CSS se aplicará cuando hay varias reglas que 
-      se aplican a un mismo elemento. Se calcula sumando el peso de cada tipo de selector utilizado en una regla. Por ejemplo, un selector de ID 
-      tiene un peso mayor que un selector de clase, que a su vez tiene un peso mayor que un selector de elemento.</p>
-    <hr/>
-
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector5">Atribute Selector</button>
-
-    <hr/>
-    <hr/>
-
-    <h2>Combinadores</h2>
-    <p>Los combinadores son elementos que se utilizan para combinar diferentes tipos de selectores y crear selectores más específicos. 
-      Algunos de los combinadores que se pueden utilizar son el espacio en blanco (para seleccionar elementos descendientes), el signo mayor que (>) 
-      (para seleccionar elementos hijos directos) y el signo más (+) y la tilde (~) (para seleccionar hermanos adyacentes y generales, respectivamente).</p>
-    <hr/>
-
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector6">Grouping Selectors</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector7">Chaining Selectors</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector8">Selector Descendiente</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector9">Child Selector</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector10">Adjacent Sibling Selector</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selector11">Selector Hermano General</button>
-
-    <hr/>
-
-    <div class="main_container"></div>
+    </div>
+    
+    
     <div class="hidden_main_container"></div>
 
-    
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script async src="./script.js"></script>
-    
-
-    
- 
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
 </body>
 </html>

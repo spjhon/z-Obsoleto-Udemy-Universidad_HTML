@@ -16,3 +16,14 @@ este codigo va cuando no se utiliza bootstrap
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
+button {
+	margin: 3px!important; 
+}
+
+@media (max-width: 600px) {
+	#main {
+		display: block!important;
+		width: 90%;
+		margin: auto;
+	}
+  }

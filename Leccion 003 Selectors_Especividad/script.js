@@ -10,6 +10,12 @@ function readTextFile(file, callback) {
   rawFile.send(null); 
 }
 
+function convertFirstLetterUpperCase(sentence) {
+  return sentence.replace(/\b\w/g, function(match) {
+    return match.toUpperCase();
+  });
+}
+
 //usage:
 readTextFile("./content.json", function(text){
   const Selectors = JSON.parse(text);
@@ -20,12 +26,19 @@ readTextFile("./content.json", function(text){
   Selectors.Selectors_Specificity.map((subject) => {
     
     /*aqui codigo del tema*/
-    console.log(subject.topic);
-  const mainContainer = document.getElementsByClassName("hidden_main_container");
+  const mainContainer = document.getElementsByClassName("main_container");
     
-    mainContainer[0].innerHTML += `<hr/><hr/>${subject.topic}`;
+    mainContainer[0].innerHTML += `
+    <hr/>
+    <hr/>
+    <h2>${subject.topic}</h2>
+    <hr/>
+    <p>${subject.description}</p>
+    <hr/>`;
 
-
+    subject.subject.map((selector) => {
+      mainContainer[0].innerHTML += `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${convertFirstLetterUpperCase(selector.titulo.toLowerCase())}</button>`;
+    });
 
     subject.subject.map((selector) => {
       hiddenMainContainer[0].innerHTML += `<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -38,9 +51,8 @@ readTextFile("./content.json", function(text){
               </div>
               <div class="modal-body">
         
-              ${selector.parrafo}
+              <p>${selector.parrafo}</p>
               ${selector.codepen}
-              
   
               </div>
               <div class="modal-footer">
