@@ -1,18 +1,53 @@
 {
+  "topic_description": "A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of roles and you can learn about them in this module.",
   "topic": [
-
     {
-      "title": "Pseudo-Elemento",
-      "description": "Aqui va la descripcion de los pseudo elemento",
+      "title": "::before and ::after",
+      "description": "Both the ::before and ::after pseudo-elements create a child element inside an element only if you define a content property. In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default. In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.",
       "subject": [
         {
-          "id": "selector1",
-          "titulo": "Ejemplo o subtipo de elemento",
-          "parrafo": "Descripcion del pseudo elemento",
-          "codepen": "Aqui iria el Iframe"
+          "id": "001",
+          "titulo": "Ejemplo ::before",
+          "parrafo": "Ejemplo de un before",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::before\" src=\"https://codepen.io/spjhon/embed/jOeamoG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n    See the Pen <a href=\"https://codepen.io/spjhon/pen/jOeamoG\">\n    Pseudo-Elemento ::before</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.\n  </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::file-selector-button",
+      "description": "The ::file-selector-button CSS pseudo-element represents the button of an input> of type=file.",
+      "subject": [
+        {
+          "id": "002",
+          "titulo": "Ejemplo ::file-selector-button",
+          "parrafo": "Ejemplo de un ::file-selector-button",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::file-selector-button\" src=\"https://codepen.io/spjhon/embed/BaqmdBV?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/BaqmdBV\">\n        Pseudo-Elemento ::file-selector-button</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::first-letter",
+      "description": "The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).",
+      "subject": [
+        {
+          "id": "003",
+          "titulo": "Ejemplo ::first-letter",
+          "parrafo": "Ejemplo de un ::first-letter",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::first-letter\" src=\"https://codepen.io/spjhon/embed/yLRPoLW?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/yLRPoLW\">\n        Pseudo-Elemento ::first-letter</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::first-line",
+      "description": "The ::first-line CSS pseudo-element applies styles to the first line of a block-level element.",
+      "subject": [
+        {
+          "id": "004",
+          "titulo": "Ejemplo ::first-line",
+          "parrafo": "Ejemplo de un ::first-line",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::first-line\" src=\"https://codepen.io/spjhon/embed/JjmOyGb?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/JjmOyGb\">\n        Pseudo-Elemento ::first-line</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
     }
   ]
 }
-

@@ -1,0 +1,18 @@
+{
+  "topic": [
+
+    {
+      "title": "Pseudo-Elemento",
+      "description": "Aqui va la descripcion de los pseudo elemento",
+      "subject": [
+        {
+          "id": "selector1",
+          "titulo": "Ejemplo o subtipo de elemento",
+          "parrafo": "Descripcion del pseudo elemento",
+          "codepen": "Aqui iria el Iframe"
+        }
+      ]
+    }
+  ]
+}
+

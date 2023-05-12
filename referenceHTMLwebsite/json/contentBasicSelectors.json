@@ -1,7 +1,6 @@
 {
-  "topic_description": "Aqui se encuentran los selectores basicos como . que es para clase, # para el id y * como selector universal",
   "topic": [
-    
+
     {
       "title": "Basic Selectors",
       "description": "Selectores basicos, escenciales para seleccionar elementos.",

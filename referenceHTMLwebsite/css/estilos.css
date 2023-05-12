@@ -1,0 +1,29 @@
+/*Esto es un comentario en una hoja de estilos*/
+/*hay que entender la jerarquia de donde se definen las caracteristicas*/
+
+
+/* TIPOS DE SELECTORES MAS COMUNES
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+este codigo va cuando no se utiliza bootstrap
+*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+button {
+	margin: 3px!important; 
+}
+
+@media (max-width: 600px) {
+	#main {
+		display: block!important;
+		width: 90%;
+		margin: auto;
+	}
+  }
