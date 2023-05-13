@@ -48,6 +48,42 @@
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::first-line\" src=\"https://codepen.io/spjhon/embed/JjmOyGb?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/JjmOyGb\">\n        Pseudo-Elemento ::first-line</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
+    },
+    {
+      "title": "::marker",
+      "description": "The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number. It works on any element or pseudo-element set to display: list-item, such as the li> and summary> elements.",
+      "subject": [
+        {
+          "id": "005",
+          "titulo": "Ejemplo ::marker",
+          "parrafo": "Ejemplo de un ::marker",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Clase ::marker\" src=\"https://codepen.io/spjhon/embed/oNaoGBa?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/oNaoGBa\">\n        Pseudo-Clase ::marker</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::part()",
+      "description": "The ::part CSS pseudo-element represents any element within a shadow tree that has a matching part attribute.",
+      "subject": [
+        {
+          "id": "006",
+          "titulo": "Ejemplo :::part()",
+          "parrafo": "Ejemplo de un ::part()",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::part()\" src=\"https://codepen.io/spjhon/embed/abRVLWG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/abRVLWG\">\n        Pseudo-Elemento ::part()</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::placeholder",
+      "description": "The ::placeholder CSS pseudo-element represents the placeholder text in an input> or textarea> element.",
+      "subject": [
+        {
+          "id": "007",
+          "titulo": "Ejemplo ::placeholder",
+          "parrafo": "Ejemplo de un ::placeholder",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::placeholder\" src=\"https://codepen.io/spjhon/embed/LYgOOVw?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/LYgOOVw\">\n        Pseudo-Elemento ::placeholder</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
     }
   ]
 }

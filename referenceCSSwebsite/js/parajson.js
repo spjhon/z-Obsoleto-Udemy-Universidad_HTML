@@ -1,15 +1,15 @@
 const iframeJson = {
   
-    title: "::first-line",
-    description: "The ::first-line CSS pseudo-element applies styles to the first line of a block-level element.",
+    title: "::part()",
+    description: "The ::placeholder CSS pseudo-element represents the placeholder text in an input> or textarea> element.",
     subject: [
       {
-        id: "004",
-        titulo: "Ejemplo ::first-line",
-        parrafo: "Ejemplo de un ::first-line",
-        codepen: `<iframe height="300" style="width: 100%;" scrolling="no" title="Pseudo-Elemento ::first-line" src="https://codepen.io/spjhon/embed/JjmOyGb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-        See the Pen <a href="https://codepen.io/spjhon/pen/JjmOyGb">
-        Pseudo-Elemento ::first-line</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+        id: "007",
+        titulo: "Ejemplo ::placeholder",
+        parrafo: "Ejemplo de un ::placeholder",
+        codepen: `<iframe height="300" style="width: 100%;" scrolling="no" title="Pseudo-Elemento ::placeholder" src="https://codepen.io/spjhon/embed/LYgOOVw?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/spjhon/pen/LYgOOVw">
+        Pseudo-Elemento ::placeholder</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
         on <a href="https://codepen.io">CodePen</a>.
       </iframe>`
       }
