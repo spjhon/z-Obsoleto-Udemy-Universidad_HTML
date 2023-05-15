@@ -67,7 +67,7 @@
       "subject": [
         {
           "id": "006",
-          "titulo": "Ejemplo :::part()",
+          "titulo": "Ejemplo ::part()",
           "parrafo": "Ejemplo de un ::part()",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::part()\" src=\"https://codepen.io/spjhon/embed/abRVLWG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/abRVLWG\">\n        Pseudo-Elemento ::part()</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
@@ -82,6 +82,18 @@
           "titulo": "Ejemplo ::placeholder",
           "parrafo": "Ejemplo de un ::placeholder",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::placeholder\" src=\"https://codepen.io/spjhon/embed/LYgOOVw?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/LYgOOVw\">\n        Pseudo-Elemento ::placeholder</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::selection",
+      "description": "The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).",
+      "subject": [
+        {
+          "id": "008",
+          "titulo": "Ejemplo ::selection",
+          "parrafo": "Ejemplo de un ::selection",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Element ::selection\" src=\"https://codepen.io/spjhon/embed/KKGyyVQ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/KKGyyVQ\">\n        Pseudo-Element ::selection</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
     }
