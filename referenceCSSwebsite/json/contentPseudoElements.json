@@ -1,5 +1,5 @@
 {
-  "topic_description": "A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of roles and you can learn about them in this module.",
+  "topic_description": "A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of roles and you can learn about them in this module. Virtual elements: Pseudo-elements create virtual elements that do not exist in the HTML structure. They are used to style a specific part of an element's content or to generate additional content.",
   "topic": [
     {
       "title": "::before and ::after",
@@ -94,6 +94,18 @@
           "titulo": "Ejemplo ::selection",
           "parrafo": "Ejemplo de un ::selection",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Element ::selection\" src=\"https://codepen.io/spjhon/embed/KKGyyVQ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/KKGyyVQ\">\n        Pseudo-Element ::selection</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::backdrop",
+      "description": "The ::backdrop CSS pseudo-element is a box the size of the viewport, which is rendered immediately beneath any element being presented in the top layer.",
+      "subject": [
+        {
+          "id": "009",
+          "titulo": "Ejemplo ::backdrop",
+          "parrafo": "Ejemplo de un ::selection",
+          "codepen": "No hay ejemplo por el momento"
         }
       ]
     }

@@ -1,0 +1,29 @@
+{
+    "topic_description": "State-based styling: Pseudo-classes can be used to style elements based on various states, such as :hover for when the element is being hovered over, :active for when it is being clicked, or :checked for selected checkboxes or radio buttons.",
+    "topic": [
+      {
+        "title": "::before and ::after",
+        "description": "Both the ::before and ::after pseudo-elements create a child element inside an element only if you define a content property. In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default. In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.",
+        "subject": [
+          {
+            "id": "001",
+            "titulo": "Ejemplo ::before",
+            "parrafo": "Ejemplo de un before",
+            "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::before\" src=\"https://codepen.io/spjhon/embed/jOeamoG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n    See the Pen <a href=\"https://codepen.io/spjhon/pen/jOeamoG\">\n    Pseudo-Elemento ::before</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.\n  </iframe>"
+          }
+        ]
+      },
+      {
+        "title": "::before and ::after",
+        "description": "Both the ::before and ::after pseudo-elements create a child element inside an element only if you define a content property. In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default. In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.",
+        "subject": [
+          {
+            "id": "002",
+            "titulo": "Ejemplo ::before",
+            "parrafo": "Ejemplo de un before",
+            "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::before\" src=\"https://codepen.io/spjhon/embed/jOeamoG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n    See the Pen <a href=\"https://codepen.io/spjhon/pen/jOeamoG\">\n    Pseudo-Elemento ::before</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.\n  </iframe>"
+          }
+        ]
+      }
+    ]
+  }
