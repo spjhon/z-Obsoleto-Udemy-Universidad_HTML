@@ -1,16 +1,20 @@
 
 //Funcion para leer un archivo json
 function readTextFile(file) {
-  var rawFile = new XMLHttpRequest();
-  rawFile.overrideMimeType("application/json");
-  rawFile.open("GET", file, true);
-  rawFile.onreadystatechange = function() {
-      if (rawFile.readyState === 4 && rawFile.status == "200") {
-          
-        info_html_template(rawFile.responseText);
+  fetch(file)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Unable to fetch JSON file');
       }
-  }
-  rawFile.send(null); 
+    })
+    .then(data => {
+      info_html_template(JSON.stringify(data));
+    })
+    .catch(error => {
+      console.error(error);
+    });
 }
 
 //funcion para convertir las primeras letras de una frase en mayuscula
@@ -35,14 +39,15 @@ function info_html_template(text){
   //la forma en que funciona es que si el elemento existe, se inyecta en el template
   //sin embargo es de aclarar que el template se agregaria al resto de las paginas del sitio
   //por tanto solo se deberia utilizar para websites mas no para webapps.
-  //puede haber impacto en el performance
+  //puede haber impacto en el performance  
   let img = document.getElementById("imgaPrueba");
   if (img !== null) {
     // El elemento existe
-   img = `<img id="imgaPruebaRender" src="../img/css-pseudo-elements-portada.jpg" alt="fff" width="400" >`
+   img = `<img id="imgaPruebaRender" src="${img.alt}" alt="Imagen Introductoria" width="400" >`
   }else{
     img = ""
   }
+  
 
   outsideContainer.classList.add("d-flex", "justify-content-around")//este class list toco agregarlo ya que sale error al inyectar el div ya que hace conflicto al cargar la sidebar
 
