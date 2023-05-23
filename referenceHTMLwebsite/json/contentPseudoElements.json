@@ -1,18 +1,113 @@
 {
+  "topic_description": "A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of roles and you can learn about them in this module. Virtual elements: Pseudo-elements create virtual elements that do not exist in the HTML structure. They are used to style a specific part of an element's content or to generate additional content.",
   "topic": [
-
     {
-      "title": "Pseudo-Elemento",
-      "description": "Aqui va la descripcion de los pseudo elemento",
+      "title": "::before and ::after",
+      "description": "Both the ::before and ::after pseudo-elements create a child element inside an element only if you define a content property. In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default. In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.",
       "subject": [
         {
-          "id": "selector1",
-          "titulo": "Ejemplo o subtipo de elemento",
-          "parrafo": "Descripcion del pseudo elemento",
-          "codepen": "Aqui iria el Iframe"
+          "id": "001",
+          "titulo": "Ejemplo ::before",
+          "parrafo": "Ejemplo de un before",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::before\" src=\"https://codepen.io/spjhon/embed/jOeamoG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n    See the Pen <a href=\"https://codepen.io/spjhon/pen/jOeamoG\">\n    Pseudo-Elemento ::before</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n    on <a href=\"https://codepen.io\">CodePen</a>.\n  </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::file-selector-button",
+      "description": "The ::file-selector-button CSS pseudo-element represents the button of an input> of type=file.",
+      "subject": [
+        {
+          "id": "002",
+          "titulo": "Ejemplo ::file-selector-button",
+          "parrafo": "Ejemplo de un ::file-selector-button",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::file-selector-button\" src=\"https://codepen.io/spjhon/embed/BaqmdBV?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/BaqmdBV\">\n        Pseudo-Elemento ::file-selector-button</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::first-letter",
+      "description": "The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).",
+      "subject": [
+        {
+          "id": "003",
+          "titulo": "Ejemplo ::first-letter",
+          "parrafo": "Ejemplo de un ::first-letter",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::first-letter\" src=\"https://codepen.io/spjhon/embed/yLRPoLW?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/yLRPoLW\">\n        Pseudo-Elemento ::first-letter</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::first-line",
+      "description": "The ::first-line CSS pseudo-element applies styles to the first line of a block-level element.",
+      "subject": [
+        {
+          "id": "004",
+          "titulo": "Ejemplo ::first-line",
+          "parrafo": "Ejemplo de un ::first-line",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::first-line\" src=\"https://codepen.io/spjhon/embed/JjmOyGb?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/JjmOyGb\">\n        Pseudo-Elemento ::first-line</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::marker",
+      "description": "The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number. It works on any element or pseudo-element set to display: list-item, such as the li> and summary> elements.",
+      "subject": [
+        {
+          "id": "005",
+          "titulo": "Ejemplo ::marker",
+          "parrafo": "Ejemplo de un ::marker",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Clase ::marker\" src=\"https://codepen.io/spjhon/embed/oNaoGBa?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/oNaoGBa\">\n        Pseudo-Clase ::marker</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::part()",
+      "description": "The ::part CSS pseudo-element represents any element within a shadow tree that has a matching part attribute.",
+      "subject": [
+        {
+          "id": "006",
+          "titulo": "Ejemplo ::part()",
+          "parrafo": "Ejemplo de un ::part()",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::part()\" src=\"https://codepen.io/spjhon/embed/abRVLWG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/abRVLWG\">\n        Pseudo-Elemento ::part()</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::placeholder",
+      "description": "The ::placeholder CSS pseudo-element represents the placeholder text in an input> or textarea> element.",
+      "subject": [
+        {
+          "id": "007",
+          "titulo": "Ejemplo ::placeholder",
+          "parrafo": "Ejemplo de un ::placeholder",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Elemento ::placeholder\" src=\"https://codepen.io/spjhon/embed/LYgOOVw?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/LYgOOVw\">\n        Pseudo-Elemento ::placeholder</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::selection",
+      "description": "The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).",
+      "subject": [
+        {
+          "id": "008",
+          "titulo": "Ejemplo ::selection",
+          "parrafo": "Ejemplo de un ::selection",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"Pseudo-Element ::selection\" src=\"https://codepen.io/spjhon/embed/KKGyyVQ?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/KKGyyVQ\">\n        Pseudo-Element ::selection</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "::backdrop",
+      "description": "The ::backdrop CSS pseudo-element is a box the size of the viewport, which is rendered immediately beneath any element being presented in the top layer.",
+      "subject": [
+        {
+          "id": "009",
+          "titulo": "Ejemplo ::backdrop",
+          "parrafo": "Ejemplo de un ::selection",
+          "codepen": "No hay ejemplo por el momento"
         }
       ]
     }
   ]
 }
-

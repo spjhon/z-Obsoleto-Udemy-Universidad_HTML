@@ -5,7 +5,7 @@ function navbar () {
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
             <img src="../img/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-            HTML Reference Document
+            HTML REFERENCE DOCUMENT
             </a>
         </div>
     </nav>`
