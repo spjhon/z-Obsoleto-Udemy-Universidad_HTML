@@ -15,7 +15,7 @@ function navbar () {
     const wrapper = document.getElementById("sidebar");
     wrapper.innerHTML += `
     <div class="list-group">
-      <a href="../pages/basicSelectors.html" class="list-group-item list-group-item-action list-group-item-dark">Selectors And Specifity</a>
+      <a href="../pages/HTMLcategories.html" class="list-group-item list-group-item-action list-group-item-dark">HTML Categories</a>
       <a href="../pages/pseudo-clases.html" class="list-group-item list-group-item-action list-group-item-dark">Pseudo-Clases</a>
       <a href="../pages/pseudo-elements.html" class="list-group-item list-group-item-action list-group-item-dark">Pseudo-Elements</a>
     </div>`

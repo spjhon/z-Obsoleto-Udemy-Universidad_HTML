@@ -1,0 +1,17 @@
+{
+  "topic_description": "Aqui se encuentran todos los elementos HTML en referencia de la pagina www.w3schools.com. HTML5 is the fifth revision of the Hypertext Markup Language (HTML), which is the standard language used to create web pages and applications. It is an essential technology for structuring and presenting content on the World Wide Web. HTML5 introduced several new features and improvements over its predecessor, HTML4, to enhance the web development process and provide a more interactive and multimedia-rich browsing experience.",
+  "topic": [
+    {
+      "title": "Basic HTML",
+      "description": "Most Common HTML elements",
+      "subject": [
+        {
+          "id": "001",
+          "titulo": "&lt;!DOCTYPE>",
+          "parrafo": "Defines the document type. The declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect.",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"001-&lt;!DOCTYPE&gt;\" src=\"https://codepen.io/spjhon/embed/MWPLvwz?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/MWPLvwz\">\n        001-&lt;!DOCTYPE&gt;</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    }
+  ]
+}

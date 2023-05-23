@@ -24,6 +24,7 @@ function convertFirstLetterUpperCase(sentence) {
   });
 }
 
+
 //funcion que aplica codigo html al DOM junto con los datos extraidos del json
 function info_html_template(text){
   
@@ -53,7 +54,7 @@ function info_html_template(text){
 
   //Cuadro exterior donde se encuentra el titulo principal de la seccion
   outsideContainer.innerHTML += `
-  <div class="card border-dark mb-3 shadow p-3 mb-5 bg-body-tertiary rounded" style="max-width: 80rem;">
+  <div class="card border-dark mb-3 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 100%;">
 
     <div class="card-header">
       ${mainTitle.innerHTML}

@@ -17,13 +17,6 @@ function readTextFile(file) {
     });
 }
 
-//funcion para convertir las primeras letras de una frase en mayuscula
-function convertFirstLetterUpperCase(sentence) {
-  return sentence.replace(/\b\w/g, function(match) {
-      return match.toUpperCase();
-  });
-}
-
 //funcion que aplica codigo html al DOM junto con los datos extraidos del json
 function info_html_template(text){
   
@@ -83,7 +76,8 @@ function info_html_template(text){
     <hr/>`;
 
     subject.subject.map((selector) => {
-      mainContainer[0].innerHTML += `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${convertFirstLetterUpperCase(selector.titulo.toLowerCase())}</button>`;
+      mainContainer[0].innerHTML += `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${selector.titulo}</button>`;
+      
     });
 
     //En este map se esta inyectando en un DIV ESCONDIDO todos los divs que van una vez se presiones sobre los botones
