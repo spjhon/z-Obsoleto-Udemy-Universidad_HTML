@@ -8,7 +8,7 @@
         {
           "id": "001",
           "titulo": "&lt;!DOCTYPE>",
-          "parrafo": "Defines the document type. The declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect.",
+          "parrafo": ["Defines the document type. The declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect."],
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"001-&lt;!DOCTYPE&gt;\" src=\"https://codepen.io/spjhon/embed/MWPLvwz?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/MWPLvwz\">\n        001-&lt;!DOCTYPE&gt;</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]

@@ -20,11 +20,11 @@ function readTextFile(file) {
 //funcion que aplica codigo html al DOM junto con los datos extraidos del json
 function info_html_template(text){
   
+  let modalDivs = "";
   const Selectors = JSON.parse(text);
-  const hiddenMainContainer = document.getElementsByClassName("hidden_main_container");
+  const hiddenMainContainer = document.getElementById("hidden_main_container");
   const outsideContainer = document.getElementById("main");
   const mainTitle = document.getElementById("mainTitle");
-  
   const topicDescription = Selectors.topic_description;
   
 
@@ -57,7 +57,7 @@ function info_html_template(text){
     ${img /*imagen agregada como contenido perzonalizado en pseudo-elements.html*/}  
     
     <div class="card-body">
-      <div class="main_container">
+      <div id="main_container">
       </div>
     </div>
 
@@ -65,24 +65,20 @@ function info_html_template(text){
 
   //Con este map se mapea cada uno de los subtemas y se inyectan en el cuadro exterior junto con sus botones
   Selectors.topic.map((subject) => {
-    const mainContainer = document.getElementsByClassName("main_container");
+    const mainContainer = document.getElementById("main_container");
     
-    mainContainer[0].innerHTML += `
+    mainContainer.innerHTML += `
     <hr/>
     <hr/>
     <h2>${subject.title}</h2>
     <hr/>
     <p>${subject.description}</p>
     <hr/>`;
-
+    
     subject.subject.map((selector) => {
-      mainContainer[0].innerHTML += `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${selector.titulo}</button>`;
+      mainContainer.innerHTML += `<button id="button${selector.id}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${selector.titulo}</button>`;
       
-    });
-
-    //En este map se esta inyectando en un DIV ESCONDIDO todos los divs que van una vez se presiones sobre los botones
-    subject.subject.map((selector) => {
-      hiddenMainContainer[0].innerHTML += `
+      modalDivs += `
       <div class="modal fade" id=${selector.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
           <div class="modal-content">
@@ -103,13 +99,24 @@ function info_html_template(text){
 
           </div>
         </div>
-      </div>
-      `;
+      </div>`;
     });
   });
+  
+  console.log(modalDivs)
+  
+  hiddenMainContainer.innerHTML = modalDivs
+  
+  
+
 }
+
+
 
 //aqui se lee la ruta del json cuando se carga cada pagina y se le adiciona la ruta del json al readtetfile
 const jsonRoute = document.getElementById("jsonRoute");
 readTextFile(jsonRoute.innerHTML);
+
+  
+
 
