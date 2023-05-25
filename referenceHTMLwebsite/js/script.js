@@ -1,3 +1,50 @@
+
+///this are functions created by CHATgpt
+
+//function created by CHATgtp to add a <br> everytime it finds a period "." expect when the period its inside a <code> that
+// this tags are inside the json and is bad practice. be aware
+function addBrAfterEmptySpace(text) {
+  let output = '';
+  let withinCodeTag = false;
+  let lastChar = '';
+
+  for (let i = 0; i < text.length; i++) {
+    const currentChar = text[i];
+
+    if (currentChar === '<' && text[i + 1] === 'c' && text[i + 2] === 'o' && text[i + 3] === 'd' && text[i + 4] === 'e' && text[i + 5] === '>') {
+      withinCodeTag = true;
+      output += text.substring(i, i + 6);
+      i += 5;
+    } else if (currentChar === '<' && text[i + 1] === '/' && text[i + 2] === 'c' && text[i + 3] === 'o' && text[i + 4] === 'd' && text[i + 5] === 'e' && text[i + 6] === '>') {
+      withinCodeTag = false;
+      output += text.substring(i, i + 7);
+      i += 6;
+    } else if (currentChar === ' ' && text[i + 1] === ' ' && !withinCodeTag && lastChar !== '/') {
+      output += ' ' + '<br>';
+      i++;
+    } else {
+      output += currentChar;
+    }
+
+    lastChar = currentChar;
+  }
+
+  return output;
+}
+
+
+//this function created by chatgpt add <code> before and everytime it finds &lt;
+//and add </code> after and everytime it finds &gt;
+function addCodeTags(text) {
+  text = text.replace(/&lt;/g, '<code>&lt;');   // Replace &lt; with <code>&lt;
+  text = text.replace(/&gt;/g, '&gt;</code>'); // Replace &gt; with &gt;</code>
+  return text;
+}
+
+
+/// this si the script to read the json, formated and inyected in a html template to every page that
+/// calls this script
+
 //Funcion para leer un archivo json
 function readTextFile(file) {
   fetch(file)
@@ -50,7 +97,7 @@ function info_html_template(text){
       ${mainTitle.innerHTML}
     </div>
 
-    <div id="generalDescr">${topicDescription}</div>
+    <div id="generalDescr">${addBrAfterEmptySpace(topicDescription)}</div>
     
     ${img /*imagen agregada como contenido perzonalizado en pseudo-elements.html*/}  
     
@@ -71,7 +118,7 @@ function info_html_template(text){
     <hr/>
     <h2>${subject.title}</h2>
     <hr/>
-    <p>${subject.description}</p>
+    <p>${addBrAfterEmptySpace(subject.description)}</p>
     <hr/>`;
     
     subject.subject.map((selector) => {
@@ -88,7 +135,7 @@ function info_html_template(text){
             </div>
 
             <div class="modal-body">      
-              <p>${selector.parrafo}</p>
+              <p>${addBrAfterEmptySpace(addCodeTags(selector.parrafo))}</p>
               ${selector.codepen}
             </div>
 

@@ -1,5 +1,5 @@
 {
-  "topic_description": "Aqui se encuentran todos los elementos HTML en referencia de la pagina www.w3schools.com. HTML5 is the fifth revision of the Hypertext Markup Language (HTML), which is the standard language used to create web pages and applications. It is an essential technology for structuring and presenting content on the World Wide Web. HTML5 introduced several new features and improvements over its predecessor, HTML4, to enhance the web development process and provide a more interactive and multimedia-rich browsing experience.",
+  "topic_description": "Aqui se encuentran todos los elementos HTML en referencia de la pagina www.w3schools.com. HTML5 is the fifth revision of the Hypertext Markup Language (HTML), which is the standard language used to create web pages and applications. It is an essential technology for structuring and presenting content on the World Wide Web. HTML5 introduced several new features and improvements over its predecessor, HTML4, to enhance the web development process and provide a more interactive and multimedia-rich browsing experience.  Los elementos HTML contienen:  - ATRIBUTOS ESTANDAR: con los cuale se le pueden definir atributos especificos de cada elemento.  -ATRIBUTOS DE EVENTOS: Los primeros atributos se aplican una vez el elemento se imprime en el DOM, los de eventos se activan cuando el usuario ocaciona el evento.  -ATRIBUTOS GLOBALES: Que se le pueden aplicar a cualquier elemento.  NOTA: No confundir con los atributos y metodos del DOM que son diferentes aunque sae puedan hacer las mismas cosas con ellos.  La diferencia radica en que los atributos y eventos HTML son inLine (por ejemplo onclick) mientras que los del DOM se attach al elemento desde javascript (por ejemplo addEventHandler(click)).  NOTA: Por buenas practicas es mejor no utilizar eventos inLine sino utilizar la api (metodos y atributos) del DOM desde javascript",
   "topic": [
     {
       "title": "Basic HTML",
@@ -8,8 +8,32 @@
         {
           "id": "001",
           "titulo": "&lt;!DOCTYPE>",
-          "parrafo": ["Defines the document type. The declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect."],
+          "parrafo": "All HTML documents must start with a <!DOCTYPE> declaration.  Defines the document type.  The declaration is not an HTML tag.  It is an \"information\" to the browser about what document type to expect.",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"001-&lt;!DOCTYPE&gt;\" src=\"https://codepen.io/spjhon/embed/MWPLvwz?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/MWPLvwz\">\n        001-&lt;!DOCTYPE&gt;</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        },
+        {
+          "id": "002",
+          "titulo": "HTML &lt;!--...--> Tag",
+          "parrafo": "The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers. You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"002-Coments\" src=\"https://codepen.io/spjhon/embed/zYmbPzW?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/zYmbPzW\">\n        002-Coments</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        },
+        {
+          "id": "003",
+          "titulo": "HTML &lt;html&gt; Tag",
+          "parrafo": "The &lt;html&gt; tag represents the root of an HTML document. The &lt;html&gt; tag is the container for all other HTML elements (except for the &lt;!DOCTYPE&gt; tag). Note: You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page, this is meant to assist search engines and browsers.",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"003-HTML &lt;html&gt; Tag\" src=\"https://codepen.io/spjhon/embed/RwedjZz?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/RwedjZz\">\n        003-HTML &lt;html&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        },
+        {
+          "id": "004",
+          "titulo": "HTML &lt;head&gt; Tag",
+          "parrafo": "The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.  Metadata is data about the HTML document.  Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.    The following elements can go inside the &lt;head&gt; element:  &lt;title&gt; (required in every HTML document)  &lt;style&gt;  &lt;base&gt;  &lt;link&gt;  &lt;meta&gt;  &lt;script&gt;  &lt;noscript&gt;",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"004-HTML &lt;head&gt; Tag\" src=\"https://codepen.io/spjhon/embed/ExdMQmg?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/ExdMQmg\">\n        004-HTML &lt;head&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        },
+        {
+          "id": "004",
+          "titulo": "HTML &lt;head&gt; Tag",
+          "parrafo": "The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.  Metadata is data about the HTML document.  Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.    The following elements can go inside the &lt;head&gt; element:  &lt;title&gt; (required in every HTML document)  &lt;style&gt;  &lt;base&gt;  &lt;link&gt;  &lt;meta&gt;  &lt;script&gt;  &lt;noscript&gt;",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"004-HTML &lt;head&gt; Tag\" src=\"https://codepen.io/spjhon/embed/ExdMQmg?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/ExdMQmg\">\n        004-HTML &lt;head&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
     }
