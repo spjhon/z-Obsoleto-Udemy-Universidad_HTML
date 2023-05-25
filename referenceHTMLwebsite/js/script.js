@@ -1,4 +1,3 @@
-
 //Funcion para leer un archivo json
 function readTextFile(file) {
   fetch(file)
@@ -21,13 +20,13 @@ function readTextFile(file) {
 function info_html_template(text){
   
   let modalDivs = "";
+  let visibleDivs = "";
   const Selectors = JSON.parse(text);
   const hiddenMainContainer = document.getElementById("hidden_main_container");
   const outsideContainer = document.getElementById("main");
   const mainTitle = document.getElementById("mainTitle");
   const topicDescription = Selectors.topic_description;
   
-
   //Este codigo se agrego como una condiconal debido a un cambio personalizado de un de las paginas
   //la forma en que funciona es que si el elemento existe, se inyecta en el template
   //sin embargo es de aclarar que el template se agregaria al resto de las paginas del sitio
@@ -41,7 +40,6 @@ function info_html_template(text){
     img = ""
   }
   
-
   outsideContainer.classList.add("d-flex", "justify-content-around")//este class list toco agregarlo ya que sale error al inyectar el div ya que hace conflicto al cargar la sidebar
 
   //Cuadro exterior donde se encuentra el titulo principal de la seccion
@@ -61,13 +59,14 @@ function info_html_template(text){
       </div>
     </div>
 
-  </div>`
+  </div>`;
+  
+  const mainContainer = document.getElementById("main_container");
 
   //Con este map se mapea cada uno de los subtemas y se inyectan en el cuadro exterior junto con sus botones
   Selectors.topic.map((subject) => {
-    const mainContainer = document.getElementById("main_container");
     
-    mainContainer.innerHTML += `
+    visibleDivs += `
     <hr/>
     <hr/>
     <h2>${subject.title}</h2>
@@ -76,7 +75,7 @@ function info_html_template(text){
     <hr/>`;
     
     subject.subject.map((selector) => {
-      mainContainer.innerHTML += `<button id="button${selector.id}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${selector.titulo}</button>`;
+      visibleDivs += `<button id="button${selector.id}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${selector.titulo}</button>`;
       
       modalDivs += `
       <div class="modal fade" id=${selector.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -103,20 +102,11 @@ function info_html_template(text){
     });
   });
   
-  console.log(modalDivs)
+  mainContainer.innerHTML = visibleDivs;
+  hiddenMainContainer.innerHTML = modalDivs;
   
-  hiddenMainContainer.innerHTML = modalDivs
-  
-  
-
 }
-
-
 
 //aqui se lee la ruta del json cuando se carga cada pagina y se le adiciona la ruta del json al readtetfile
 const jsonRoute = document.getElementById("jsonRoute");
 readTextFile(jsonRoute.innerHTML);
-
-  
-
-
