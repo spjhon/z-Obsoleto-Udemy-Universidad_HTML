@@ -41,6 +41,12 @@ function addCodeTags(text) {
   return text;
 }
 
+//this is a function created by chatgpt to put the <strong> tag to word with "-" at the beggining
+function addStrongTags(str) {
+  const regex = /-\s(.*?):/g;
+  return str.replace(regex, '<strong>-$1:</strong>');
+}
+
 
 /// this si the script to read the json, formated and inyected in a html template to every page that
 /// calls this script
@@ -97,7 +103,7 @@ function info_html_template(text){
       ${mainTitle.innerHTML}
     </div>
 
-    <div id="generalDescr">${addBrAfterEmptySpace(topicDescription)}</div>
+    <div id="generalDescr">${addStrongTags(addBrAfterEmptySpace(addCodeTags(topicDescription)))}</div>
     
     ${img /*imagen agregada como contenido perzonalizado en pseudo-elements.html*/}  
     
@@ -118,7 +124,7 @@ function info_html_template(text){
     <hr/>
     <h2>${subject.title}</h2>
     <hr/>
-    <p>${addBrAfterEmptySpace(subject.description)}</p>
+    <p>${addStrongTags(addBrAfterEmptySpace(addCodeTags(subject.description)))}</p>
     <hr/>`;
     
     subject.subject.map((selector) => {
@@ -135,7 +141,7 @@ function info_html_template(text){
             </div>
 
             <div class="modal-body">      
-              <p>${addBrAfterEmptySpace(addCodeTags(selector.parrafo))}</p>
+              <p>${addStrongTags(addBrAfterEmptySpace(addCodeTags(selector.parrafo)))}</p>
               ${selector.codepen}
             </div>
 

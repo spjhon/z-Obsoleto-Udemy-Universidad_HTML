@@ -10,10 +10,13 @@ REACT (ITS TECHNICALLY A LIBRARY BUT I TAKE IT AS A FRAMEWORK)
 
 
 
-LIBRARIES
+LIBRARIES JAVASCRIPT
 
 three.js		para animaciones 3d
 prism, Highlight.js	para highlight codigo en la pagina web
+
+LIBRERIAS EXCLUSIVAS REACT
+react-aria-live
 
 
 
