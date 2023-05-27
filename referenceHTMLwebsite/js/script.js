@@ -32,7 +32,6 @@ function addBrAfterEmptySpace(text) {
   return output;
 }
 
-
 //this function created by chatgpt add <code> before and everytime it finds &lt;
 //and add </code> after and everytime it finds &gt;
 function addCodeTags(text) {
@@ -48,7 +47,7 @@ function addStrongTags(str) {
 }
 
 
-/// this si the script to read the json, formated and inyected in a html template to every page that
+/// this is the script to read the json, formated and inyected in a html template to every page that
 /// calls this script
 
 //Funcion para leer un archivo json
@@ -92,7 +91,10 @@ function info_html_template(text){
   }else{
     img = ""
   }
-  
+
+  const x = document.getElementById("pruebas")
+  console.log(x)
+
   outsideContainer.classList.add("d-flex", "justify-content-around")//este class list toco agregarlo ya que sale error al inyectar el div ya que hace conflicto al cargar la sidebar
 
   //Cuadro exterior donde se encuentra el titulo principal de la seccion
