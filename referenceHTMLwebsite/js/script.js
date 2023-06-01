@@ -92,8 +92,8 @@ function info_html_template(text){
     img = ""
   }
 
-  const x = document.getElementById("pruebas")
-  console.log(x)
+  
+  
 
   outsideContainer.classList.add("d-flex", "justify-content-around")//este class list toco agregarlo ya que sale error al inyectar el div ya que hace conflicto al cargar la sidebar
 

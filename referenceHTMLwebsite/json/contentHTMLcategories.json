@@ -20,7 +20,7 @@
         {
           "id": "003",
           "titulo": "HTML &lt;html&gt; Tag",
-          "parrafo": "The &lt;html&gt; tag represents the root of an HTML document. The &lt;html&gt; tag is the container for all other HTML elements (except for the &lt;!DOCTYPE&gt; tag).    - Note: You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page, this is meant to assist search engines and browsers.    - ATRIBUTOS:    - xmlns: Specifies the XML namespace attribute (If you need your content to conform to XHTML)",
+          "parrafo": "The &lt;html&gt; tag represents the root of an HTML document. The &lt;html&gt; tag is the container for all other HTML elements (except for the &lt;!DOCTYPE&gt; tag).    - Note: You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page, this is meant to assist search engines and browsers.    - ATRIBUTOS:  - xmlns: Specifies the XML namespace attribute (If you need your content to conform to XHTML)",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"003-HTML &lt;html&gt; Tag\" src=\"https://codepen.io/spjhon/embed/RwedjZz?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/RwedjZz\">\n        003-HTML &lt;html&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         },
         {
@@ -52,6 +52,30 @@
           "titulo": "HTML &lt;p&gt; Tag",
           "parrafo": "The &lt;p&gt; tag defines a paragraph.  Browsers automatically add a single blank line before and after each &lt;p&gt; element.  Note that the browser simply ignores the line breaks in the source code!    - Default CSS Settings: &lt;p {display: block; margin-top: 1em; margin-bottom: 1em; margin-left: 0; margin-right: 0;}&gt;",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;p&gt; Tag\" src=\"https://codepen.io/spjhon/embed/MWPREXW?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/MWPREXW\">\n        HTML &lt;p&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        },
+        {
+          "id": "009",
+          "titulo": "HTML &lt;br&gt; Tag",
+          "parrafo": "Insert single line breaks in a text.    - Default CSS Settings: None",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;br&gt; Tag\" src=\"https://codepen.io/spjhon/embed/oNarKmO?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/oNarKmO\">\n        HTML &lt;br&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        },
+        {
+          "id": "010",
+          "titulo": "HTML &lt;hr&gt; Tag",
+          "parrafo": "The &lt;hr&gt; tag defines a thematic break in an HTML page (e.g. a shift of topic). The &lt;hr&gt; element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.  This element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.     - Default CSS Settings: &lt;hr {display: block; margin-top: 0.5em; margin-bottom: 0.5em; margin-left: auto; margin-right: auto; border-style: inset; border-width: 1px;}&gt;",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;hr&gt; Tag\" src=\"https://codepen.io/spjhon/embed/oNarKrR?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/oNarKrR\">\n        HTML &lt;hr&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
+        }
+      ]
+    },
+    {
+      "title": "Formmating",
+      "description": "To format text directly with HTML",
+      "subject": [
+        {
+          "id": "011",
+          "titulo": "HTML &lt;abbr&gt; Tag",
+          "parrafo": "The &lt;abbr&gt; tag defines an abbreviation or an acronym, like \"HTML\", \"CSS\", \"Mr.\", \"Dr.\", \"ASAP\", \"ATM\".      - ATRIBUTOS:  This element only supports the global attributes.    title:  The optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. The title attribute has a specific semantic meaning when used with the &lt;abbr&gt; element; it must contain a full human-readable description or expansion of the abbreviation. This text is often presented by browsers as a tooltip when the mouse cursor is hovered over the element.  - Default CSS Settings: &lt;abbr {display: inline;}&gt;",
+          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;abbr&gt; Tag\" src=\"https://codepen.io/spjhon/embed/vYVoBZG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/vYVoBZG\">\n        HTML &lt;abbr&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
     }
