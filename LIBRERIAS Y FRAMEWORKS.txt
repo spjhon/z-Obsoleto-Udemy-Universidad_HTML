@@ -14,9 +14,12 @@ LIBRARIES JAVASCRIPT
 
 three.js		para animaciones 3d
 prism, Highlight.js	para highlight codigo en la pagina web
+markdown-it		para administrar contenido markdown-it
+
 
 LIBRERIAS EXCLUSIVAS REACT
 react-aria-live
+MDX on StoryBook, utilizar markdown para generar documentacion del codigo en tiempo real
 
 
 

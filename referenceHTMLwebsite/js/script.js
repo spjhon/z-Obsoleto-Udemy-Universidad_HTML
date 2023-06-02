@@ -1,5 +1,21 @@
 
-///this are functions created by CHATgpt
+// Wait for the page to load
+window.addEventListener('load', function() {
+  // Show the div by removing the "hidden" class
+  let div = document.getElementById('myBody');
+  div.classList.remove('hidden');
+
+  // Create a new instance of markdownIt
+  const md = markdownit();
+  /* Example usage
+  const markdownText = '# Hello, markdown-it!';
+  console.log(html);*/
+  const html = md.render(markdownText);
+
+});
+ 
+
+///this are functions created by CHATgpt, ALL THIS FUNCTIONS ARENT NECESARRY THANKS TO MARKDOWN
 
 //function created by CHATgtp to add a <br> everytime it finds a period "." expect when the period its inside a <code> that
 // this tags are inside the json and is bad practice. be aware
@@ -46,12 +62,36 @@ function addStrongTags(str) {
   return str.replace(regex, '<strong>-$1:</strong>');
 }
 
+//This function created by chatgpt put "      " simulatin a tab everytime it finds the simbol "*".
+function replaceAsteriskWithSpace(text) {
+  var regex = /\*/g; // Regular expression to match all occurrences of *
+  var replacedText = text.replace(regex, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'); // Replace * with &nbsp;
+  return replacedText;
+}
+
 
 /// this is the script to read the json, formated and inyected in a html template to every page that
 /// calls this script
 
 //Funcion para leer un archivo json
 function readTextFile(file) {
+  fetch(file)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Unable to fetch JSON file');
+      }
+    })
+    .then(data => {
+      info_html_template(JSON.stringify(data));
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
+
+function readMarkTextFile(file) {
   fetch(file)
     .then(response => {
       if (response.ok) {
@@ -92,9 +132,6 @@ function info_html_template(text){
     img = ""
   }
 
-  
-  
-
   outsideContainer.classList.add("d-flex", "justify-content-around")//este class list toco agregarlo ya que sale error al inyectar el div ya que hace conflicto al cargar la sidebar
 
   //Cuadro exterior donde se encuentra el titulo principal de la seccion
@@ -105,7 +142,7 @@ function info_html_template(text){
       ${mainTitle.innerHTML}
     </div>
 
-    <div id="generalDescr">${addStrongTags(addBrAfterEmptySpace(addCodeTags(topicDescription)))}</div>
+    <div id="generalDescr">${replaceAsteriskWithSpace(addStrongTags(addBrAfterEmptySpace(addCodeTags(topicDescription))))}</div>
     
     ${img /*imagen agregada como contenido perzonalizado en pseudo-elements.html*/}  
     
@@ -115,7 +152,8 @@ function info_html_template(text){
     </div>
 
   </div>`;
-  
+
+    
   const mainContainer = document.getElementById("main_container");
 
   //Con este map se mapea cada uno de los subtemas y se inyectan en el cuadro exterior junto con sus botones
@@ -126,9 +164,10 @@ function info_html_template(text){
     <hr/>
     <h2>${subject.title}</h2>
     <hr/>
-    <p>${addStrongTags(addBrAfterEmptySpace(addCodeTags(subject.description)))}</p>
+    <p>${addStrongTags(replaceAsteriskWithSpace(addBrAfterEmptySpace(addCodeTags(subject.description))))}</p>
     <hr/>`;
-    
+
+       
     subject.subject.map((selector) => {
       visibleDivs += `<button id="button${selector.id}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${selector.id}">${selector.titulo}</button>`;
       
@@ -143,7 +182,7 @@ function info_html_template(text){
             </div>
 
             <div class="modal-body">      
-              <p>${addStrongTags(addBrAfterEmptySpace(addCodeTags(selector.parrafo)))}</p>
+              <p>${replaceAsteriskWithSpace(addStrongTags(addBrAfterEmptySpace(addCodeTags(selector.parrafo))))}</p>
               ${selector.codepen}
             </div>
 
@@ -156,6 +195,9 @@ function info_html_template(text){
       </div>`;
     });
   });
+
+  //aqui se agrega lo que esta en el markdown
+  visibleDivs += ``
   
   mainContainer.innerHTML = visibleDivs;
   hiddenMainContainer.innerHTML = modalDivs;
