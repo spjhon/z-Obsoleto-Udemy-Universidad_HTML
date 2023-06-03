@@ -10,11 +10,10 @@ window.addEventListener('load', function() {
 
   // Create a new instance of markdownIt
   
-  // Example usage
+  /*Example usage
   const markdownText = '# Hello, markdown-it!';
-  
   const html = md.render(markdownText);
-  console.log(html);
+  console.log(html);*/
 });
  
 
@@ -67,8 +66,8 @@ function addStrongTags(str) {
 
 //This function created by chatgpt put "      " simulatin a tab everytime it finds the simbol "*".
 function replaceAsteriskWithSpace(text) {
-  var regex = /\*/g; // Regular expression to match all occurrences of *
-  var replacedText = text.replace(regex, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'); // Replace * with &nbsp;
+  let regex = /\*/g; // Regular expression to match all occurrences of *
+  let replacedText = text.replace(regex, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'); // Replace * with &nbsp;
   return replacedText;
 }
 
@@ -199,19 +198,105 @@ function info_html_template(text){
     });
   });
 
-  //aqui se agrega lo que esta en el markdown
-  visibleDivs += ``
+  
   
   mainContainer.innerHTML = visibleDivs;
   hiddenMainContainer.innerHTML = modalDivs;
   
 }
 
+//this function created with chatgpt extract text that is markdown between some other text
+function extractId(input) {
+  let regex = /<!--id-->\r\n([\s\S]*?)\r\n<!--id-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
+function extractTitulo(input) {
+  let regex = /<!--titulo-->([\s\S]*?)<!--titulo-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
+function extractParrafo(input) {
+  let regex = /<!--parrafo-->([\s\S]*?)<!--parrafo-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
+function extractCodePen(input) {
+  let regex = /<!--codepen-->([\s\S]*?)<!--codepen-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
+function escapeSymbols(text) {
+  let escapedText = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return escapedText;
+}
 
 function info_markdown_template(data){
 
-  console.log(data)
+  let modalDivs = "";
+  let visibleDivs = "";
+  const mainContainer = document.getElementById("main_container");
+  const hiddenMainContainer = document.getElementById("hidden_main_container");
+  const outsideContainer = document.getElementById("main");
+  const mainTitle = document.getElementById("mainTitle");
 
+  const x = md.render(data)
+
+  const rawId = extractId(data);
+  const rawTitulo = extractTitulo(data);
+  const rawParrafo = extractParrafo(data);
+  const rawCodePen = extractCodePen(data);
+
+  const htmlId = "";
+  const htmlTitulo = "";
+  const htmlParrafo = "";
+  const htmlCodePen = "";
+
+  visibleDivs += `<button id="button${rawId[0]}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${rawId[0]}">${escapeSymbols(rawTitulo[0])}</button>`;
+  mainContainer.innerHTML += visibleDivs;
+
+
+  const content = {
+    id: "",
+    titulo: "",
+    parrafo: "",
+    codepen: "",
+  }
+  console.log(data)
+  console.log(x)
+  console.log(rawId)
+  console.log(md.render(rawTitulo[0]))
+  console.log(md.render(rawParrafo[0]))
+  console.log(rawCodePen[0])
+  
 };
 
 //aqui se lee la ruta del json cuando se carga cada pagina y se le adiciona la ruta del json al readtetfile
