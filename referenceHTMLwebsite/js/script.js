@@ -1,4 +1,7 @@
 
+
+const md = markdownit();
+
 // Wait for the page to load
 window.addEventListener('load', function() {
   // Show the div by removing the "hidden" class
@@ -6,12 +9,12 @@ window.addEventListener('load', function() {
   div.classList.remove('hidden');
 
   // Create a new instance of markdownIt
-  const md = markdownit();
-  /* Example usage
+  
+  // Example usage
   const markdownText = '# Hello, markdown-it!';
-  console.log(html);*/
+  
   const html = md.render(markdownText);
-
+  console.log(html);
 });
  
 
@@ -95,13 +98,13 @@ function readMarkTextFile(file) {
   fetch(file)
     .then(response => {
       if (response.ok) {
-        return response.json();
+        return response.text();
       } else {
-        throw new Error('Unable to fetch JSON file');
+        throw new Error('Unable to fetch MARKDOWN file');
       }
     })
     .then(data => {
-      info_html_template(JSON.stringify(data));
+      info_markdown_template(data);
     })
     .catch(error => {
       console.error(error);
@@ -204,6 +207,17 @@ function info_html_template(text){
   
 }
 
+
+function info_markdown_template(data){
+
+  console.log(data)
+
+};
+
 //aqui se lee la ruta del json cuando se carga cada pagina y se le adiciona la ruta del json al readtetfile
 const jsonRoute = document.getElementById("jsonRoute");
+const markdownRoute = document.getElementById("markdownRoute");
+
 readTextFile(jsonRoute.innerHTML);
+readMarkTextFile(markdownRoute.innerHTML);
+
