@@ -1,4 +1,5 @@
-
+//Este es un antiguo codigo ya que al principio se hizo con json pero
+//el ingresar y editar la informacion era muy tedioso asi que se cambia
 
 const md = markdownit();
 
