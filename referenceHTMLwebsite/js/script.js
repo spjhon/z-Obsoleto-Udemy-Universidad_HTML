@@ -1,13 +1,9 @@
-
-
-const md = markdownit();
-
 // Wait for the page to load
 window.addEventListener('load', function() {
   // Show the div by removing the "hidden" class
   let div = document.getElementById('myBody');
   div.classList.remove('hidden');
-
+  
   // Create a new instance of markdownIt
   
   /*Example usage
