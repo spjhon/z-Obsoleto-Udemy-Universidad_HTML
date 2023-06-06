@@ -277,6 +277,8 @@ function info_markdown_template(data){
     codepen: rawCodePen,
   }
 
+  console.log(rawParrafo[0])
+  
   contents.id.map((content, index) => {
     visibleDivs += `<button id="button${contents.id[index]}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${contents.id[index]}">${escapeSymbols(contents.titulo[index])}</button>`;
     modalDivs += `
@@ -290,7 +292,7 @@ function info_markdown_template(data){
           </div>
 
           <div class="modal-body">      
-            <div>${md.render(contents.parrafo[index])}</div>
+            ${md.render(contents.parrafo[index])}
             ${contents.codepen[index]}
           </div>
 

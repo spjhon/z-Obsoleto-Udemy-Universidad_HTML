@@ -98,7 +98,7 @@
         {
           "id": "015",
           "titulo": "HTML &lt;bdo&gt; Tag",
-          "parrafo": "BDO stands for Bi-Directional Override. Specify the text direction.    - ATRIBUTOS:    dir:  The direction in which text should be rendered in this element's contents. Possible values are:  *Required.  *ltr: Indicates that the text should go in a left-to-right direction, rtl: Indicates that the text should go in a right-to-left direction.    - Default CSS Settings: &lt;bdo {unicode-bidi: bidi-override;}&gt;",
+          "parrafo": "BDO stands for Bi-Directional Override. Specify the text direction.    - ATRIBUTOS:    dir:  The direction in which text should be rendered in this element's contents. Possible values are:  *Required.  *ltr: Indicates that the text should go in a left-to-right direction,   *rtl: Indicates that the text should go in a right-to-left direction.    - Default CSS Settings: &lt;bdo {unicode-bidi: bidi-override;}&gt;",
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;bdo&gt; Tag\" src=\"https://codepen.io/spjhon/embed/vYVoeYB?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/vYVoeYB\">\n        HTML &lt;bdo&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
