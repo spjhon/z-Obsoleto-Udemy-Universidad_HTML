@@ -2,14 +2,21 @@
   "name": "referencehtmlwebsite",
   "version": "1.0.0",
   "description": "",
-  "main": "/referenceHTMLwebsite/js/script.js",
+  "main": "./referenceHTMLwebsite/js/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "markdown-it": "^13.0.1"
+    "highlight.js": "^11.8.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-highlightjs": "^4.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.85.1",
+    "webpack-cli": "^5.1.3"
   }
 }

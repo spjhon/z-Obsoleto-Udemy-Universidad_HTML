@@ -3,7 +3,7 @@ function navbar () {
     wrapper.innerHTML += `
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="../pages/index.html">
             <img src="../img/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
             HTML REFERENCE DOCUMENT
             </a>

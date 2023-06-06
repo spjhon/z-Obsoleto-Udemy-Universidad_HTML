@@ -2,11 +2,20 @@
 016
 <!--id-->
 <!--titulo-->
-HTML <blockquote>  Tag
+HTML <blockquote> Tag
 <!--titulo-->
 <!--parrafo-->
-parrafo16  
-sin breakline
+A section that is quoted from another source. **Tip:** Use `<q>` for inline (short) quotations.  
+
+**Default CSS Settings:**  
+```css
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;}
+```
 <!--parrafo-->
 <!--codepen-->
 <iframe  height="300"  style="width: 100%;"  scrolling="no"  title="HTML &lt;blockquote&gt; Tag"  src="https://codepen.io/spjhon/embed/JjePVOr?default-tab=html%2Cresult"  frameborder="no"  loading="lazy"  allowtransparency="true"  allowfullscreen="true">

@@ -1,3 +1,19 @@
+var hljs = require('highlight.js'); // https://highlightjs.org
+
+// Actual default values
+var md = require('markdown-it')({
+  highlight: function (str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(str, { language: lang }).value;
+      } catch (__) {}
+    }
+
+    return ''; // use external default escaping
+  }
+});
+
+
 // Wait for the page to load
 window.addEventListener('load', function() {
   // Show the div by removing the "hidden" class
@@ -195,9 +211,8 @@ function info_html_template(text){
   });
 
   
-  
-  mainContainer.innerHTML = visibleDivs;
   hiddenMainContainer.innerHTML = modalDivs;
+  mainContainer.innerHTML = visibleDivs;
   
 }
 
@@ -277,7 +292,7 @@ function info_markdown_template(data){
     codepen: rawCodePen,
   }
 
-  console.log(rawParrafo[0])
+    
   
   contents.id.map((content, index) => {
     visibleDivs += `<button id="button${contents.id[index]}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${contents.id[index]}">${escapeSymbols(contents.titulo[index])}</button>`;
@@ -305,8 +320,10 @@ function info_markdown_template(data){
     </div>`;
   });
   
-  mainContainer.innerHTML += visibleDivs;
   hiddenMainContainer.innerHTML += modalDivs;
+  mainContainer.innerHTML += visibleDivs;
+
+
   
 };
 
