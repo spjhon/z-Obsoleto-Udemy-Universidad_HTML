@@ -265,6 +265,18 @@ function extractCodePen(input) {
   return matches;
 }
 
+function extractToolTipText(input) {
+  let regex = /<!--tooltiptext-->([\s\S]*?)<!--tooltiptext-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
 function escapeSymbols(text) {
   let escapedText = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return escapedText;
@@ -283,6 +295,7 @@ function info_markdown_template(data){
   const rawTitulo = extractTitulo(data);
   const rawParrafo = extractParrafo(data);
   const rawCodePen = extractCodePen(data);
+  const rawToolTipText = extractToolTipText(data);
 
   
   const contents = {
@@ -290,12 +303,13 @@ function info_markdown_template(data){
     titulo: rawTitulo,
     parrafo: rawParrafo,
     codepen: rawCodePen,
+    tooltiptext: rawToolTipText
   }
 
     
   
   contents.id.map((content, index) => {
-    visibleDivs += `<button id="button${contents.id[index]}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${contents.id[index]}">${escapeSymbols(contents.titulo[index])}</button>`;
+    visibleDivs += `<button id="button${contents.id[index]}" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="${contents.tooltiptext[index]}" data-bs-toggle="modal" data-bs-target="#${contents.id[index]}">${escapeSymbols(contents.titulo[index])}</button>`;
     modalDivs += `
     <div class="modal fade" id=${contents.id[index]} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
