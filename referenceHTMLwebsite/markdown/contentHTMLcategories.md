@@ -262,3 +262,304 @@ ins {
 <!--tooltiptext-->
 Defines a text that has been inserted into a document
 <!--tooltiptext-->
+
+
+<!--id-->
+024
+<!--id-->
+<!--titulo-->
+HTML <kbd> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<kbd>` tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font.  
+
+**Tip:** This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.  
+
+**Attributes:**
+- No atributes  
+
+**Default CSS Settings:**  
+```css
+kbd {
+  font-family: monospace;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;kbd&gt; Tag" src="https://codepen.io/spjhon/embed/RwqNKqK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/RwqNKqK">
+  HTML &lt;kbd&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a snippet of user input.
+<!--tooltiptext-->
+
+
+<!--id-->
+025
+<!--id-->
+<!--titulo-->
+HTML <mark> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<mark>` HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.  
+
+**Tip:** Can be used with the mark tag  
+
+**Attributes:**
+- No atributes  
+
+**Default CSS Settings:**  
+```css
+mark {
+  background-color: yellow;
+  color: black;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;mark&gt; Tag" src="https://codepen.io/spjhon/embed/ZEmYezN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/ZEmYezN">
+  HTML &lt;mark&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines highlighted text.
+<!--tooltiptext-->
+
+
+<!--id-->
+026
+<!--id-->
+<!--titulo-->
+HTML <meter> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<meter>` tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.  
+
+**Tip:** Always add the `<label>` tag for best accessibility practices!   
+
+**Note:** The `<meter>` tag should not be used to indicate progress (as in a progress bar). For progress bars, use the `<progress>` tag.
+
+**Attributes:**  
+
+| Attribute | Value   | Description                                                  |
+|-----------|---------|--------------------------------------------------------------|
+| form      | form_id | Specifies which form the `<meter>` element belongs to        |
+| high      | number  | Specifies the range that is considered to be a high value    |
+| low       | number  | Specifies the range that is considered to be a low value     |
+| max       | number  | Specifies the maximum value of the range                     |
+| min       | number  | Specifies the minimum value of the range. Default value is 0 |
+| optimum   | number  | Specifies what value is the optimal value for the gauge      |
+| value     | number  | Required. Specifies the current value of the gauge           |  
+  
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;meter&gt; Tag" src="https://codepen.io/spjhon/embed/zYMxZyo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/zYMxZyo">
+  HTML &lt;meter&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a scalar measurement within a known range (a gauge).
+<!--tooltiptext-->
+
+
+<!--id-->
+027
+<!--id-->
+<!--titulo-->
+HTML <pre> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<pre>` tag defines preformatted text.  
+Text in a `<pre>` element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code. 
+
+**Tip:** No tips  
+
+**Attributes:**
+- No atributes  
+
+**Default CSS Settings:**  
+```css
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;pre&gt; Tag" src="https://codepen.io/spjhon/embed/mdQyBLZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/mdQyBLZ">
+  HTML &lt;pre&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines preformatted text.
+<!--tooltiptext-->
+
+
+<!--id-->
+028
+<!--id-->
+<!--titulo-->
+HTML <progress> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<progress>` tag represents the completion progress of a task.  
+
+**Tip:** Always add the `<label>` tag for best accessibility practices!.  
+Use the `<progress>` tag in conjunction with JavaScript to display the progress of a task.  
+
+**Note:** The `<progress>` tag is not suitable for representing a gauge (e.g. disk space usage or relevance of a query result). To represent a gauge, use the `<meter>` tag instead.
+
+**Attributes:**  
+
+| Attribute | Value  | Description                                                            |
+|-----------|--------|------------------------------------------------------------------------|
+| max       | number | Specifies how much work the task requires in total. Default value is 1 |
+| value     | number | Specifies how much of the task has been completed                        
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;progress&gt; Tag" src="https://codepen.io/spjhon/embed/NWEPaZb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/NWEPaZb">
+  HTML &lt;progress&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Represents the progress of a task
+<!--tooltiptext-->
+
+
+<!--id-->
+029
+<!--id-->
+<!--titulo-->
+HTML <q> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<q>` HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the `<blockquote>` element.  
+
+**Tip:** No tip yet.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+| Attribute | Value | Description                           |
+|-----------|-------|---------------------------------------|
+| cite      | URL   | Specifies the source URL of the quote |  
+
+**Default CSS Settings:**  
+```css
+q {
+  display: inline;
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;q&gt; Tag" src="https://codepen.io/spjhon/embed/BaGymBz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/BaGymBz">
+  HTML &lt;q&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a short quotation
+<!--tooltiptext-->
+
+
+<!--id-->
+030
+<!--id-->
+<!--titulo-->
+HTML <rp> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<rp>` tag can be used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations.  
+
+**Tip:** Use `<rp>` together with `<ruby>` and `<rt>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;rp&gt; Tag" src="https://codepen.io/spjhon/embed/QWJwOwv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/QWJwOwv">
+  HTML &lt;rp&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines what to show in browsers that do not support ruby annotations,
+<!--tooltiptext-->
+
+
+<!--id-->
+031
+<!--id-->
+<!--titulo-->
+HTML <rt> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<rt>` tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.  
+
+**Tip:** Use <rt> together with <ruby> and <rp>: The <ruby> element consists of one or more characters that needs an explanation/pronunciation, and an <rt> element that gives that information, and an optional <rp> element that defines what to show for browsers that not support ruby annotations.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+rt {
+  line-height: normal;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;rp&gt; Tag" src="https://codepen.io/spjhon/embed/QWJwOwv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/QWJwOwv">
+  HTML &lt;rp&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines an explanation/pronunciation of characters (for East Asian typography).
+<!--tooltiptext-->

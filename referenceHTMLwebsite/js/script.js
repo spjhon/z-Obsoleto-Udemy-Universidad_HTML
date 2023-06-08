@@ -1,7 +1,7 @@
-var hljs = require('highlight.js'); // https://highlightjs.org
+const hljs = require('highlight.js'); // https://highlightjs.org
 
 // Actual default values
-var md = require('markdown-it')({
+let md = require('markdown-it')({
   highlight: function (str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {

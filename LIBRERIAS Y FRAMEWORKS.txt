@@ -14,7 +14,7 @@ LIBRARIES JAVASCRIPT
 
 three.js		para animaciones 3d
 prism, Highlight.js	para highlight codigo en la pagina web
-markdown-it		para administrar contenido markdown-it
+markdown-it		para administrar contenido markdown-it, a parte esta markdown-it hightlight y markdown-it-attrs para atributos
 lodash			funciones varias dentro de javascript
 animejs			para animaciones
 moment js 		todo para con el tiempo y fechas
