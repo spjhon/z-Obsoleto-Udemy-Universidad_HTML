@@ -1,3 +1,196 @@
+<!--tituloSubtema-->
+Formatting
+<!--tituloSubtema-->
+
+<!--description-->
+To format text directly with HTML
+<!--description-->
+
+
+<!--id-->
+011
+<!--id-->
+<!--titulo-->
+HTML <abbr> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<abbr>` tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".  
+
+**Tip:** Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.  
+
+**Note:** No notes yet
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+abbr {
+  display: inline;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;abbr&gt; Tag" src="https://codepen.io/spjhon/embed/vYVoBZG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/vYVoBZG">
+  HTML &lt;abbr&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines an abbreviation or an acronym
+<!--tooltiptext-->
+
+
+<!--id-->
+012
+<!--id-->
+<!--titulo-->
+HTML <address> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<address>` tag defines the contact information for the author/owner of a document or an article.  
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.  
+
+**Tip:** No tips yet  
+
+**Note:** No notes yet
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+address {
+  display: block;
+  font-style: italic;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;address&gt; Tag" src="https://codepen.io/spjhon/embed/GRYVvva?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/GRYVvva">
+  HTML &lt;address&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines contact information for the author/owner of a document/article
+<!--tooltiptext-->
+
+
+<!--id-->
+013
+<!--id-->
+<!--titulo-->
+HTML <b> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<b>` tag specifies bold text without any extra importance.    
+
+**Tip:** This element is useful when embedding user-generated content with an unknown text direction.  
+
+**Note:** According to the HTML5 specification, the `<b>` tag should be used as a LAST resort when no other tag is more appropriate. The specification states that headings should be denoted with the `<h1>` to `<h6>` tags, emphasized text should be denoted with the `<em>` tag, important text should be denoted with the `<strong>` tag, and marked/highlighted text should be denoted with the `<mark>` tag.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+b {
+  font-weight: bold;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;b&gt; Tag" src="https://codepen.io/spjhon/embed/poxMrKe?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/poxMrKe">
+  HTML &lt;b&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines bold text
+<!--tooltiptext-->
+
+
+<!--id-->
+014
+<!--id-->
+<!--titulo-->
+HTML <bdi> Tag
+<!--titulo-->
+<!--parrafo-->
+BDI stands for Bi-Directional Isolation.  
+
+The `<bdi>` tag isolates a part of text that might be formatted in a different direction from other text outside it.  
+
+**Tip:** This element is useful when embedding user-generated content with an unknown text direction.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;bdi&gt; Tag" src="https://codepen.io/spjhon/embed/jOegLdB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/jOegLdB">
+  HTML &lt;bdi&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Isolates a part of text that might be formatted in a different direction from other text outside it.
+<!--tooltiptext-->
+
+
+<!--id-->
+015
+<!--id-->
+<!--titulo-->
+HTML <bdo> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<bdo>` tag is used to override the current text direction.  
+
+**Tip:** No tips yet.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+| Attribute | Value   | Description                                                    |
+|-----------|---------|----------------------------------------------------------------|
+| dir       | ltr rtl | Required. Specifies the text direction of the text inside the  |
+
+**Default CSS Settings:**  
+```css
+bdo {
+  unicode-bidi: bidi-override;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;bdo&gt; Tag" src="https://codepen.io/spjhon/embed/vYVoeYB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/vYVoeYB">
+  HTML &lt;bdo&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Overrides the current text directions
+<!--tooltiptext-->
+
+
 <!--id-->
 016
 <!--id-->
@@ -538,7 +731,7 @@ HTML <rt> Tag
 <!--parrafo-->
 The `<rt>` tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.  
 
-**Tip:** Use <rt> together with <ruby> and <rp>: The <ruby> element consists of one or more characters that needs an explanation/pronunciation, and an <rt> element that gives that information, and an optional <rp> element that defines what to show for browsers that not support ruby annotations.  
+**Tip:** Use `<rt>` together with `<ruby>` and `<rp>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations.  
 
 **Note:** No notes yet.
 
@@ -562,4 +755,401 @@ rt {
 <!--codepen-->
 <!--tooltiptext-->
 Defines an explanation/pronunciation of characters (for East Asian typography).
+<!--tooltiptext-->
+
+
+<!--id-->
+032
+<!--id-->
+<!--titulo-->
+HTML <ruby> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<ruby>` tag specifies a ruby annotation.  
+
+**Tip:** Use `<ruby>` together with `<rt>` and `<rp>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that do not support ruby annotations.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;ruby&gt; Tag" src="https://codepen.io/spjhon/embed/ExOaraW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/ExOaraW">
+  HTML &lt;ruby&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines an explanation/pronunciation of characters (for East Asian typography).
+<!--tooltiptext-->
+
+
+<!--id-->
+033
+<!--id-->
+<!--titulo-->
+HTML <s> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<s>` tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it.  
+
+**Tip:** The `<s>` tag should not be used to define deleted text in a document, use the `<del>` tag for that.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+s {
+  text-decoration: line-through;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;s&gt; Tag" src="https://codepen.io/spjhon/embed/rNQaPej?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/rNQaPej">
+  HTML &lt;s&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines text that is no longer correct.
+<!--tooltiptext-->
+
+
+<!--id-->
+034
+<!--id-->
+<!--titulo-->
+HTML <samp> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<samp>` tag is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.  
+
+**Tip:** No tips yet  
+
+**Note:** This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+samp {
+  font-family: monospace;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;samp&gt; Tag" src="https://codepen.io/spjhon/embed/eYQmxBg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/eYQmxBg">
+  HTML &lt;samp&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines sample output from a computer program
+<!--tooltiptext-->
+
+
+<!--id-->
+035
+<!--id-->
+<!--titulo-->
+HTML <small> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<small>` tag defines smaller text (like copyright and other side-comments).  
+
+**Tip:** No tips yet  
+
+**Note:** This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+small {
+  font-size: smaller;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;small&gt; Tag" src="https://codepen.io/spjhon/embed/ZEmYweB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/ZEmYweB">
+  HTML &lt;small&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines smaller text
+<!--tooltiptext-->
+
+
+<!--id-->
+036
+<!--id-->
+<!--titulo-->
+HTML <strong> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<strong>` tag is used to define text with strong importance. The content inside is typically displayed in bold.  
+
+**Tip:** No tips yet  
+
+**Note:** Use the `<b>` tag to specify bold text without any extra importance!
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+strong {
+  font-weight: bold;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;strong&gt; Tag" src="https://codepen.io/spjhon/embed/ExOarXw?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/ExOarXw">
+  HTML &lt;strong&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines important text
+<!--tooltiptext-->
+
+
+<!--id-->
+037
+<!--id-->
+<!--titulo-->
+HTML <sub> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<sub>` tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.  
+
+**Tip:** No tips yet  
+
+**Note:** Use the `<sup>` tag to define superscripted text.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;sub&gt; Tag" src="https://codepen.io/spjhon/embed/ZEmYwrK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/ZEmYwrK">
+  HTML &lt;sub&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines subscripted text
+<!--tooltiptext-->
+
+
+<!--id-->
+038
+<!--id-->
+<!--titulo-->
+HTML <sup> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<sup>` tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1].  
+
+**Tip:** No tips yet  
+
+**Note:** se the `<sub>` tag to define subscript text.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;sup&gt; Tag" src="https://codepen.io/spjhon/embed/jOQEdpM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/jOQEdpM">
+  HTML &lt;sup&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines superscripted text
+<!--tooltiptext-->
+
+
+<!--id-->
+039
+<!--id-->
+<!--titulo-->
+HTML <template> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<template>` tag is used as a container to hold some HTML content hidden from the user when the page loads.  
+The content inside `<template>` can be rendered later with a JavaScript.  
+
+You can use the `<template>` tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the <template> tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.  
+
+**Tip:** Watch for pitfalls  
+
+**Note:** The only standard attributes that the `<template>` element supports are the global attributes.
+
+**Attributes:**  
+
+No atributes 
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;template&gt; Tag" src="https://codepen.io/spjhon/embed/KKrwJba?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/KKrwJba">
+  HTML &lt;template&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a container for content that should be hidden when the page loads
+<!--tooltiptext-->
+
+
+<!--id-->
+040
+<!--id-->
+<!--titulo-->
+HTML <time> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<time>` tag defines a specific time (or datetime).  
+
+The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.  
+
+**Tip:** No tips yet  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+| Attribute | Value    | Description                                               |
+|-----------|----------|-----------------------------------------------------------|
+| datetime  | datetime | Represent a machine-readable format of the `<time>` element | 
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;time&gt; Tag" src="https://codepen.io/spjhon/embed/ZEmYPOx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/ZEmYPOx">
+  HTML &lt;time&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a specific time (or datetime)
+<!--tooltiptext-->
+
+
+<!--id-->
+041
+<!--id-->
+<!--titulo-->
+HTML <var> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<var>` tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.    
+
+**Tip:** This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes. 
+
+**Default CSS Settings:**  
+```css
+var {
+  font-style: italic;
+}
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;u&gt; Tag" src="https://codepen.io/spjhon/embed/dyQPrOx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/dyQPrOx">
+  HTML &lt;u&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a variable
+<!--tooltiptext-->
+
+
+<!--id-->
+042
+<!--id-->
+<!--titulo-->
+HTML <wbr> Tag
+<!--titulo-->
+<!--parrafo-->
+The `<wbr>` (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.  
+
+**Tip:** When a word is too long, the browser might break it at the wrong place. You can use the `<wbr>` element to add word break opportunities.  
+
+**Note:** No notes yet.
+
+**Attributes:**  
+
+No atributes. 
+
+**Default CSS Settings:**  
+```css
+None.
+```
+<!--parrafo-->
+<!--codepen-->
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML &lt;wbr&gt; Tag" src="https://codepen.io/spjhon/embed/gOQbExM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/spjhon/pen/gOQbExM">
+  HTML &lt;wbr&gt; Tag</a> by Juan Camilo (<a href="https://codepen.io/spjhon">@spjhon</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<!--codepen-->
+<!--tooltiptext-->
+Defines a possible line-break
 <!--tooltiptext-->

@@ -2,6 +2,7 @@ const hljs = require('highlight.js'); // https://highlightjs.org
 
 // Actual default values
 let md = require('markdown-it')({
+  html:true,
   highlight: function (str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
@@ -105,22 +106,33 @@ function readTextFile(file) {
     });
 }
 
-function readMarkTextFile(file) {
-  fetch(file)
-    .then(response => {
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error('Unable to fetch MARKDOWN file');
-      }
+//fetch function but with promises and improved to multiple urls
+function readMarkTextFiles(files) {
+  const fetchPromises = files.map(file => fetch(file));
+  
+  Promise.all(fetchPromises)
+    .then(responses => {
+      const textPromises = responses.map(response => {
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error('Unable to fetch MARKDOWN file');
+        }
+      });
+      return Promise.all(textPromises);
     })
-    .then(data => {
-      info_markdown_template(data);
+    .then(dataArray => {
+      // dataArray contains an array of responses for each URL
+      // Perform further actions with the data here
+      dataArray.forEach(data => {
+        info_markdown_template(data);
+      });
     })
     .catch(error => {
       console.error(error);
     });
 }
+
 
 //funcion que aplica codigo html al DOM junto con los datos extraidos del json
 function info_html_template(text){
@@ -277,6 +289,30 @@ function extractToolTipText(input) {
   return matches;
 }
 
+function extractTitle(input) {
+  let regex = /<!--tituloSubtema-->([\s\S]*?)<!--tituloSubtema-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
+function extractDescription(input) {
+  let regex = /<!--description-->([\s\S]*?)<!--description-->/g;
+  let matches = [];
+  let match;
+
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+
+  return matches;
+}
+
 function escapeSymbols(text) {
   let escapedText = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return escapedText;
@@ -296,55 +332,66 @@ function info_markdown_template(data){
   const rawParrafo = extractParrafo(data);
   const rawCodePen = extractCodePen(data);
   const rawToolTipText = extractToolTipText(data);
+  const rawTitle = extractTitle(data);
+  const rawDescription = extractDescription(data);
 
   
-  const contents = {
-    id: rawId,
-    titulo: rawTitulo,
-    parrafo: rawParrafo,
-    codepen: rawCodePen,
-    tooltiptext: rawToolTipText
-  }
+  const subject = {
+    title: rawTitle,
+    description: rawDescription,
+    content: {
+      id: rawId,
+      titulo: rawTitulo,
+      parrafo: rawParrafo,
+      codepen: rawCodePen,
+      tooltiptext: rawToolTipText
+    }
+  };
 
+      visibleDivs += `
+      <hr/>
+      <hr/>
+      <h2>${subject.title}</h2>
+      <hr/>
+      <p>${subject.description}</p>
+      <hr/>`;
     
-  
-  contents.id.map((content, index) => {
-    visibleDivs += `<button id="button${contents.id[index]}" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="${contents.tooltiptext[index]}" data-bs-toggle="modal" data-bs-target="#${contents.id[index]}">${escapeSymbols(contents.titulo[index])}</button>`;
-    modalDivs += `
-    <div class="modal fade" id=${contents.id[index]} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-        <div class="modal-content">
+    subject.content.id.map((content, index) => {
+      visibleDivs += `<button id="button${subject.content.id[index]}" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="${subject.content.tooltiptext[index]}" data-bs-toggle="modal" data-bs-target="#${subject.content.id[index]}">${escapeSymbols(subject.content.titulo[index])}</button>`;
+      modalDivs += `
+      <div class="modal fade" id=${subject.content.id[index]} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
 
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">${md.render(contents.titulo[index])}</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">${escapeSymbols(subject.content.titulo[index])}</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">      
+              ${md.render(subject.content.parrafo[index])}
+              ${subject.content.codepen[index]}
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
           </div>
-
-          <div class="modal-body">      
-            ${md.render(contents.parrafo[index])}
-            ${contents.codepen[index]}
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-
         </div>
-      </div>
-    </div>`;
-  });
+      </div>`;
+    });
   
   hiddenMainContainer.innerHTML += modalDivs;
   mainContainer.innerHTML += visibleDivs;
-
-
   
 };
 
 //aqui se lee la ruta del json cuando se carga cada pagina y se le adiciona la ruta del json al readtetfile
 const jsonRoute = document.getElementById("jsonRoute");
-const markdownRoute = document.getElementById("markdownRoute");
+const markdownRoute = [];
+markdownRoute.push(document.getElementById("markdownRoute").innerHTML);
+markdownRoute.push(document.getElementById("markdownRoute2").innerHTML);
 
 readTextFile(jsonRoute.innerHTML);
-readMarkTextFile(markdownRoute.innerHTML);
-
+readMarkTextFiles(markdownRoute);

@@ -66,42 +66,6 @@
           "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;hr&gt; Tag\" src=\"https://codepen.io/spjhon/embed/oNarKrR?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/oNarKrR\">\n        HTML &lt;hr&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
         }
       ]
-    },
-    {
-      "title": "Formmating",
-      "description": "To format text directly with HTML",
-      "subject": [
-        {
-          "id": "011",
-          "titulo": "HTML &lt;abbr&gt; Tag",
-          "parrafo": "The &lt;abbr&gt; tag defines an abbreviation or an acronym, like \"HTML\", \"CSS\", \"Mr.\", \"Dr.\", \"ASAP\", \"ATM\".      - ATRIBUTOS:  This element only supports the global attributes.    title:  The optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. The title attribute has a specific semantic meaning when used with the &lt;abbr&gt; element; it must contain a full human-readable description or expansion of the abbreviation. This text is often presented by browsers as a tooltip when the mouse cursor is hovered over the element.  - Default CSS Settings: &lt;abbr {display: inline;}&gt;",
-          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;abbr&gt; Tag\" src=\"https://codepen.io/spjhon/embed/vYVoBZG?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/vYVoBZG\">\n        HTML &lt;abbr&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
-        },
-        {
-          "id": "012",
-          "titulo": "HTML &lt;address&gt; Tag",
-          "parrafo": "The &lt;address&gt; HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.    - ATRIBUTOS:  None    - Default CSS Settings: &lt;address {display: block; font-style: italic;}&gt;",
-          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;address&gt; Tag\" src=\"https://codepen.io/spjhon/embed/GRYVvva?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/GRYVvva\">\n        HTML &lt;address&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
-        },
-        {
-          "id": "013",
-          "titulo": "HTML &lt;b&gt; Tag, The Bring Attention To element",
-          "parrafo": "Make some text bold (without marking it as important). Use the &lt;b&gt; 4for cases like keywords in a summary. According to the HTML5 specification, the &lt;b&gt; tag should be used as a LAST resort when no other tag is more appropriate.    - ATRIBUTOS:  None    - Default CSS Settings: &lt;b {font-weight: bold;}&gt;",
-          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;b&gt; Tag\" src=\"https://codepen.io/spjhon/embed/poxMrKe?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/poxMrKe\">\n        HTML &lt;b&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
-        },
-        {
-          "id": "014",
-          "titulo": "HTML &lt;bdi&gt; Tag",
-          "parrafo": "BDI stands for Bi-Directional Isolation. Isolate the usernames from the surrounding text-direction settings. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted.    - ATRIBUTOS:  None    - Default CSS Settings:  None",
-          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;bdi&gt; Tag\" src=\"https://codepen.io/spjhon/embed/jOegLdB?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/jOegLdB\">\n        HTML &lt;bdi&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
-        },
-        {
-          "id": "015",
-          "titulo": "HTML &lt;bdo&gt; Tag",
-          "parrafo": "BDO stands for Bi-Directional Override. Specify the text direction.    - ATRIBUTOS:    dir:  The direction in which text should be rendered in this element's contents. Possible values are:  *Required.  *ltr: Indicates that the text should go in a left-to-right direction,   *rtl: Indicates that the text should go in a right-to-left direction.    - Default CSS Settings: &lt;bdo {unicode-bidi: bidi-override;}&gt;",
-          "codepen": "<iframe height=\"300\" style=\"width: 100%;\" scrolling=\"no\" title=\"HTML &lt;bdo&gt; Tag\" src=\"https://codepen.io/spjhon/embed/vYVoeYB?default-tab=html%2Cresult\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\">\n        See the Pen <a href=\"https://codepen.io/spjhon/pen/vYVoeYB\">\n        HTML &lt;bdo&gt; Tag</a> by Juan Camilo (<a href=\"https://codepen.io/spjhon\">@spjhon</a>)\n        on <a href=\"https://codepen.io\">CodePen</a>.\n      </iframe>"
-        }
-      ]
     }
   ]
 }
