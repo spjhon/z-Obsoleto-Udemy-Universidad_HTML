@@ -47,9 +47,7 @@ The `<form>` element can contain one or more of the following form elements:
 
 **Default CSS Settings:**  
 ```css
-abbr {
-  display: inline;
-}
+None.
 ```
 <!--parrafo-->
 <!--codepen-->
