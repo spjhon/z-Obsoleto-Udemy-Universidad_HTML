@@ -395,3 +395,8 @@ markdownRoute.push(document.getElementById("markdownRoute2").innerHTML);
 
 readTextFile(jsonRoute.innerHTML);
 readMarkTextFiles(markdownRoute);
+const button = document.getElementById("myButton");
+function handleClick(event) {
+  console.log(event); // Logging the event object
+}
+button.addEventListener("dblclick", handleClick);
