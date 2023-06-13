@@ -395,12 +395,12 @@ HTML <i> Tag
 <!--parrafo-->
 The `<i>` tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.  
 
-**Tip:** Use the <i> element only when there is not a more appropriate semantic element, such as:  
-- <em> to indicate stress emphasis.
-- <strong> to indicate importance, seriousness, or urgency.
-- <mark> to indicate relevance.
-- <cite> to mark up the name of a work, such as a book, play, or song.
-- <dfn> to mark up the defining instance of a term. 
+**Tip:** Use the `<i>` element only when there is not a more appropriate semantic element, such as:  
+- `<em>` to indicate stress emphasis.
+- `<strong>` to indicate importance, seriousness, or urgency.
+- `<mark>` to indicate relevance.
+- `<cite>` to mark up the name of a work, such as a book, play, or song.
+- `<dfn>` to mark up the defining instance of a term. 
 
 **Attributes:**
 - No atributes    
@@ -1020,7 +1020,7 @@ HTML <template> Tag
 The `<template>` tag is used as a container to hold some HTML content hidden from the user when the page loads.  
 The content inside `<template>` can be rendered later with a JavaScript.  
 
-You can use the `<template>` tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the <template> tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.  
+You can use the `<template>` tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the `<template>` tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.  
 
 **Tip:** Watch for pitfalls  
 
