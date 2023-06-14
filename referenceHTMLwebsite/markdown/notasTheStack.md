@@ -16,7 +16,7 @@ Infrastructure: HTTP Hypertext Transfer Protocol.
 
 Hosting para:
     Next js: Vercel que incluye CDN (Contend Delivery Network for edge delivery)
-    React js: Vercel, Netlify, AWS s3
+    React js: Vercel, Netlify, AWS s3, A2 hosting
     Astro js: Vercel
 
 Version Control: GIT (aplicar CI/CD y un proceso de merge llamado trunk based development)
