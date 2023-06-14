@@ -27,6 +27,9 @@ Lenguages Web Base: HTML, CSS, JAVASCRIPT (typescript).
 
 Package Manager: NPM
 
+HTML
+Existe algo llamado pug HTML para escribir html like markup
+
 CSS:
 Pre-processors:
 SCSS
