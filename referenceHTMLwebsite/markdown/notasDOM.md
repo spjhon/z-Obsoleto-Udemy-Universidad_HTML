@@ -8,13 +8,15 @@
 
 - Los elementos HTML, como <div>, <p>, <img>, etc., son nodos hijos del elemento <html> y pueden contener otros elementos anidados.
 
-el root es un selector CSS que tiene mas espcividad que el HTML, sin embargo representan lo mismo
+el root es un selector CSS que tiene mas espcividad que el HTML, sin embargo representan lo mismo.
 
 La comunicación entre el DOM y el navegador se realiza a través de APIs (Interfaces de Programación de Aplicaciones). Estas APIs proporcionan métodos y eventos que permiten interactuar con el DOM y realizar diversas operaciones, como manipular elementos, cambiar estilos, agregar o eliminar contenido, entre otros.
 
-- La diferencia entre NODE y ELEMENT es que los node son mas cosas dentro del arbol del DOM (buscar imagen adjunta)como los comentarios y el texto y muchas mas cosas, los elementos son solo la coleccion de tags. In simple words, an element is a node that's written using a tag in the HTML document.
+- La diferencia entre NODE y ELEMENT es que los node son mas cosas dentro del arbol del DOM (buscar imagen adjunta) como los comentarios y el texto y muchas mas cosas, los elementos son solo la coleccion de tags. In simple words, an element is a node that's written using a tag in the HTML document.
 
 - Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.
+
+- Estos elementos HTML heredan propiedades y funciones de sus padres que en el caso de los nodosHTML seria 
 
 - GRACIAS AL DOM SE PUEDE MANIPULAR ELEMENTOS HTML:
 
