@@ -16,6 +16,8 @@ La comunicación entre el DOM y el navegador se realiza a través de APIs (Inter
 
 - Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.
 
+- Si en algun momento deseas ver todo lo que hace que un elemento exista y los metodos y propiedades disponibles utilizar console.dir si por el contrario se necesita el evento solo se imprime el evento una vez se pasa como argumento y se convierte en parametro de la funcion que que es invocada por medio del addEventListener()
+
 - Estos elementos HTML heredan propiedades y funciones de sus padres que en el caso de los nodosHTML seria 
 
 - GRACIAS AL DOM SE PUEDE MANIPULAR ELEMENTOS HTML:

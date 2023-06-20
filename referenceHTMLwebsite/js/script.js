@@ -400,3 +400,6 @@ function handleClick(event) {
   console.log(event); // Logging the event object
 }
 button.addEventListener("dblclick", handleClick);
+
+
+header.firstChild.data = "A dynamic document";
