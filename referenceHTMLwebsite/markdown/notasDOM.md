@@ -40,6 +40,8 @@ Las propiedades de nodelist son aquellas que se aplican a lo que retorna
     The getElementsByName() Method
 Las propiedades de HTMLtokenList que es basicamete todo lo que se puede hacer con classList, manipulacion de classes.
 
+- Un elemento puede estar hecho de diferentes interfaces no tiene que ser directament jerarquico.
+
 
 **EVENTS**
 
@@ -51,4 +53,8 @@ Las propiedades de HTMLtokenList que es basicamete todo lo que se puede hacer co
 
 - Otro truco es event delegation para asi asignar un handler a muchos elementos anidados
 
-- Un truco, cuando le asignamos un click a un elemento como un div, al hacerle click en alguno de sus elementos se va a disparar el click con la ventaja que en el objeto de evento esta registrado el target que puede ser cualquier elemento dentro del div
+- Un truco, cuando le asignamos un click a un elemento como un div, al hacerle click en alguno de sus elementos se va a disparar el click con la ventaja que en el objeto de evento esta registrado el target que puede ser cualquier elemento dentro del div.
+
+-The event object is created automatically by the browser when an event occurs, and it is passed as an argument to the event handler or callback function.
+
+- Los eventos se pueden dar: desde HTML: `<element onload="myScript">`, desde JavaScript: `object.onload = function(){myScript};`, o desde eventListener: `object.addEventListener("load", myScript);`
