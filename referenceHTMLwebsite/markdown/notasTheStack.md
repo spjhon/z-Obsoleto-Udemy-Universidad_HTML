@@ -72,7 +72,7 @@ MongoBd:        For non-relational
 
 CMS:
 Strapi (RestApi, GraphQL)
-Teritorium
+Directus
 
 ORM: Preferiblemente con typescript: Prisma, TypeORM, RESTapi, GraphQL
 

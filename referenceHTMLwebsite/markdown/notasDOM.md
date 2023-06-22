@@ -58,3 +58,18 @@ Las propiedades de HTMLtokenList que es basicamete todo lo que se puede hacer co
 -The event object is created automatically by the browser when an event occurs, and it is passed as an argument to the event handler or callback function.
 
 - Los eventos se pueden dar: desde HTML: `<element onload="myScript">`, desde JavaScript: `object.onload = function(){myScript};`, o desde eventListener: `object.addEventListener("load", myScript);`
+
+**coockies**
+
+Cookies vs Local Storage
+Cookies are for client-server (browser-server) applications.
+
+Local storage are for client (browser) applications.
+
+Cookies are associated with websites. If the data is for client use, sending cookies in every HTTP header is waste of bandwith.
+
+Some users have cookies disabled as a rule in their browsers.
+
+A Cookie has a size limit of 4 Kilobytes. Local Storage has a limit of 5 Megabytes per domain.
+
+A Cookie have expiration date. Local Storage has not.
