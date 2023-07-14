@@ -1,6 +1,6 @@
 **NOTAS CSS**
 
-Pseudo-Clases
+**Pseudo-Clases**
 
 :autofill
 
